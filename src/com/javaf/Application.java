@@ -77,4 +77,17 @@ public class Application {
 		return _result;
 	}
 	
+	/**
+	 * Intermediar a obtenção dos valores configurados ou programaticamente definidos das propriedades.
+	 * @param property Chave da propriedade
+	 * @return <code>null</code> caso a propriedade não exista
+	 */
+	public Object valueOf(final Object property){
+		Object _result = null;
+		
+		_result = APPLICATION.PROPERTIES.get(property);
+		logging.debug("OBTENDO VALOR DA PROPRIEDADE DE APLICAÇÃO " + property + STRING.IGUAL_SPACE + _result);
+		
+		return _result;
+	}
 }

@@ -63,7 +63,8 @@ public final class Constants {
 		
 		/**
 		 * Chave para armazenamento do caminho absoluto para o diretório de arquivos temporários.<br/>
-		 * O valor padrão é carregado da propriedade <code>user.dir</code>
+		 *  - Essa chave armazena uma instância de <code>java.lang.String</code><br/>
+		 *  - O valor padrão é carregado da propriedade <code>user.dir</code>
 		 * <pre>
 		 * System.getProperty("user.dir");
 		 * </pre>

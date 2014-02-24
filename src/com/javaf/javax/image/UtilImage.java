@@ -11,6 +11,7 @@ import javax.imageio.ImageIO;
 import com.javaf.Bagman;
 import com.javaf.ConversionException;
 import com.javaf.Utility;
+import com.javaf.Constants.STRING;
 import com.javaf.javase.io.UtilIO;
 import com.javaf.javase.logging.ILogging;
 import com.javaf.javase.logging.Logging;
@@ -58,6 +59,21 @@ public final class UtilImage implements Utility {
 		}catch(IOException _e){
 			logging.debug(_e.getMessage(), _e);
 			throw new ConversionException(_e.getMessage(), _e);
+		}
+		
+		return _result;
+	}
+	
+	public File write(final Image image, final File directory)  throws IOException {
+		File _result = null;
+		
+		_result = new File(directory, image.getName() + STRING.DOT + image.getType().name());
+		
+		try{
+			ImageIO.write(image.getBuffered(), image.getType().name(), _result);
+			
+		}catch(IOException _e){
+			throw _e;
 		}
 		
 		return _result;

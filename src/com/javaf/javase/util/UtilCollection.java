@@ -184,7 +184,7 @@ public final class UtilCollection implements Utility {
 				String _value = _properties.getProperty(String.valueOf(_index) + STRING.DOT + "value");
 				
 				if(null!= _key && null!=_value){
-					LOGGING.trace("MAPOF - READY ENTRY: KEY >" + _key + " VALUE >" + _value + "<");
+					LOGGING.trace("MAPOF - READY ENTRY: KEY >" + _key + "< VALUE >" + _value + "<");
 					_result.put(keyValueOf.valueOf(_key), valueOf.valueOf(_value));
 				} else {
 					break;

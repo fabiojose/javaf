@@ -2,6 +2,8 @@ package com.javaf.javax.image;
 
 import java.awt.image.BufferedImage;
 
+import com.javaf.Constants.STRING;
+
 
 /**
  * 
@@ -48,4 +50,11 @@ public class Image {
 		return name;
 	}
 	
+	public String toString(){
+		String _result = null;
+		
+		_result = name + STRING.DOT + type;
+		
+		return _result;
+	}
 }
