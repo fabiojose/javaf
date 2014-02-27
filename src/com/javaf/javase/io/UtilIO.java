@@ -1,19 +1,24 @@
 package com.javaf.javase.io;
 
+import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileFilter;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-
 import javax.activation.DataHandler;
 import javax.activation.FileDataSource;
 
+import com.javaf.Application;
 import com.javaf.Bagman;
 import com.javaf.Utility;
+import com.javaf.Constants.APPLICATION;
 import com.javaf.Constants.I18N;
 import com.javaf.Constants.INTEGER;
 import com.javaf.Constants.REFLECTION;
@@ -286,6 +291,36 @@ public class UtilIO implements Utility {
 		}
 		
 		return _result;
+	}
+	
+	public String toPath(final String directory, final String file){
+		String _result = null;
+		
+		_result = directory + System.getProperty("file.separator") + file;
+		
+		return _result;
+	}
+	
+	public File writeOnTemporary(final InputStream stream, final String name) throws IOException {
+		
+		final File _result                 = new File(toPath(Application.getInstance().valueOf(String.class, APPLICATION.TEMPORARY_PATH_PROPERTY), name));
+		final BufferedOutputStream _output = new BufferedOutputStream(new FileOutputStream(_result));
+		
+		copy(stream, _output);
+		
+		_output.flush();
+		_output.close();
+		
+		return _result;
+	}
+	
+	public void copy(final InputStream input, final OutputStream output) throws IOException {
+		
+		byte[] _buffer = new byte[1024];
+		int _size      = 0;
+		while( (_size = input.read(_buffer)) > 0){
+			output.write(_buffer, 0, _size);
+		}
 	}
 	
 	public static void main(String...args){

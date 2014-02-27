@@ -4,9 +4,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Set;
 
 import com.javaf.Bagman;
 import com.javaf.Utility;
@@ -139,6 +141,32 @@ public final class UtilCollection implements Utility {
 				String _value = _properties.getProperty(String.valueOf(_index));
 				if(null!= _value){
 					_result.add(_value);
+				}else {
+					break;
+				}
+			}
+			
+		}catch(IOException _e){
+			LOGGING.error(_e.getMessage(), _e);
+		}
+		
+		return _result;
+	}
+	
+	public Set<String> setOf(final InputStream properties){
+		final Set<String> _result = new HashSet<String>();
+		
+		try{
+			final Properties _properties = new Properties();
+			_properties.load(properties);
+			
+			for(int _index = INTEGER._0; true; _index++){
+				
+				String _value = _properties.getProperty(String.valueOf(_index));
+				if(null!= _value){
+					if(!_result.add(_value)){
+						LOGGING.debug("REPEATED KEY >" + _value + "<");
+					}
 				}else {
 					break;
 				}

@@ -1,5 +1,6 @@
 package com.javaf;
 
+import java.net.PasswordAuthentication;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.MessageFormat;
@@ -10,6 +11,7 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
+import com.javaf.javase.net.UtilNet;
 import com.javaf.javase.persistence.Column;
 
 /**
@@ -73,6 +75,48 @@ public final class Constants {
 		public static final String TEMPORARY_PATH_PROPERTY = "TEMPORARY_PATH_PROPERTY";
 		
 		/**
+		 * Chave para armazenar valor <code>Boolean</code> que indica se as conexões http, https, socket, ftp, etc., devem utilizar proxy.<br/>
+		 * - Essa chave armazena uma instância de <code>java.lang.Boolean</code>
+		 * 
+		 * @see UtilNet
+		 */
+		public static final String NETWORK_PROXY_ON_PROPERTY = "NETWORK_PROXY_ON_PROPERTY";
+		
+		/**
+		 * Chave para armazenar endereço do host provedor de proxy.<br/>
+		 * - Essa chave armazena uma instância de <code>java.lang.String</code><br/><br/>
+		 * Por padrão não existe proxy ativado, portanto essa propriedade não possui valor default.<br/>
+		 * Exemplo:
+		 * <pre>
+		 * 192.168.10.10
+		 * </pre>
+		 * @see UtilNet
+		 */
+		public static final String NETWORK_PROXY_HOST_PROPERTY = "NETWORK_PROXY_HOST_PROPERTY";
+		
+		/**
+		 * Chave para armazenar a porta do host provedor de proxy.<br/>
+		 * - Essa chave armazena uma instância de <code>java.lang.Integer</code><br/><br/>
+		 * Por padrão não existe proxy ativado, portanto essa propriedade não possui valor default.<br/>
+		 * Exemplo:
+		 * <pre>
+		 * 8080
+		 * </pre>
+		 * @see UtilNet
+		 */
+		public static final String NETWORK_PROXY_PORT_PROPERTY = "NETWORK_PROXY_PORT_PROPERTY";
+		
+		/**
+		 * Chave para armazenar instância para autenticação de usuário e senha do proxy.<br/>
+		 * - Essa chave armazena uma instância de <code>java.net.PasswordAuthentication</code><br/><br/>
+		 * Por padrão não existe proxy ativado, portanto essa propriedade não possui valor default.<br/>
+		 * 
+		 * @see UtilNet
+		 * @see PasswordAuthentication
+		 */
+		public static final String NETWORK_PROXY_AUTHENTICATION_PROPERTY = "NETWORK_PROXY_AUTHENTICATION_PROPERTY";
+		
+		/**
 		 * Política para criação de instâncias das classes util, retornada no método <code>getInstance</code>.<br/>
 		 * tipo: {@link InstancePolicy}
 		 * @see InstancePolicy
@@ -91,16 +135,17 @@ public final class Constants {
 		 */
 		static final Map<Object, Object> PROPERTIES = new HashMap<Object, Object>();
 		static{
-			Application.getInstance().register(Locale.class,            DEFAULT.LOCALE);
-			Application.getInstance().register(BUNDLE_PROPERTY,         DEFAULT.LOCALIZATION_BUNDLE);
-			Application.getInstance().register(PROPERTIES_PROPERTY,     DEFAULT.APPLICATION_PROPERTIES);
-			Application.getInstance().register(CODE_PROPERTY,           DEFAULT.APPLICATION_CODE);
-			Application.getInstance().register(NAME_PROPERTY,           DEFAULT.APPLICATION_NAME);
-			Application.getInstance().register(TITLE_PROPERTY,          DEFAULT.APPLICATION_TITLE);
-			Application.getInstance().register(VERSION_PROPERTY,        DEFAULT.APPLICATION_VERSION);
-			Application.getInstance().register(UTIL_INSTANCIES_POLICY,  DEFAULT.APPLICATION_UTIL_INSTANCIES);
-			Application.getInstance().register(I18N_MAPPER,             DEFAULT.APPLICATION_I18N_MAPPER);
-			Application.getInstance().register(TEMPORARY_PATH_PROPERTY, DEFAULT.APPLICATION_TEMPORARY_PATH);
+			Application.getInstance().register(Locale.class,              DEFAULT.LOCALE);
+			Application.getInstance().register(BUNDLE_PROPERTY,           DEFAULT.LOCALIZATION_BUNDLE);
+			Application.getInstance().register(PROPERTIES_PROPERTY,       DEFAULT.APPLICATION_PROPERTIES);
+			Application.getInstance().register(CODE_PROPERTY,             DEFAULT.APPLICATION_CODE);
+			Application.getInstance().register(NAME_PROPERTY,             DEFAULT.APPLICATION_NAME);
+			Application.getInstance().register(TITLE_PROPERTY,            DEFAULT.APPLICATION_TITLE);
+			Application.getInstance().register(VERSION_PROPERTY,          DEFAULT.APPLICATION_VERSION);
+			Application.getInstance().register(UTIL_INSTANCIES_POLICY,    DEFAULT.APPLICATION_UTIL_INSTANCIES);
+			Application.getInstance().register(I18N_MAPPER,               DEFAULT.APPLICATION_I18N_MAPPER);
+			Application.getInstance().register(TEMPORARY_PATH_PROPERTY,   DEFAULT.APPLICATION_TEMPORARY_PATH);
+			Application.getInstance().register(NETWORK_PROXY_ON_PROPERTY, DEFAULT.APPLICATION_NETWORK_PROXY_ON);
 		}
 	}
 	
@@ -540,6 +585,7 @@ public final class Constants {
 		public static final InstancePolicy APPLICATION_UTIL_INSTANCIES  = InstancePolicy.BY_THREAD;
 		public static final Map<Object, Object> APPLICATION_I18N_MAPPER = I18N.MAPPER;
 		public static final String APPLICATION_TEMPORARY_PATH           = System.getProperty("user.dir");
+		public static final Boolean APPLICATION_NETWORK_PROXY_ON      = Boolean.FALSE;
 		
 		public static final int RESULT_SUCCESS   = 0;
 		public static final int RESULT_NOT_FOUND = -99;
