@@ -87,7 +87,7 @@ public final class UtilImage implements Utility {
 		final ImageType _type         = ImageType.valueOf(_extension);
 		final String _name            = IO.nameOf(input);
 		
-		_result = new Image(_buffered, _type, _name);
+		_result = new Image(_buffered, _type, _name, input);
 		
 		return _result;
 	}
