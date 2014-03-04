@@ -1,0 +1,5 @@
+language: java
+install: ant
+jdk:
+  - openjdk7
+  - oraclejdk7
