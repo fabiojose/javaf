@@ -7,7 +7,7 @@ import com.javaf.javase.logging.Logging;
 
 /**
  * 
- * @author fabiojm - F·bio JosÈ de Moraes
+ * @author fabiojm - F√°bio Jos√© de Moraes
  *
  */
 public class Application {
@@ -25,8 +25,8 @@ public class Application {
 	
 	/**
 	 * Atualizar as propriedades default, bem como acrescente novas.<br>
-	 * **AtenÁ„o** Os valores devem ser aplicados antes de obter quaisquer atributos da aplicaÁ„o. Caso
-	 * alguma classe utilit·ria utilize propriedades vitais para seu funcionamento, essas devem ser
+	 * **Aten√ß√£o** Os valores devem ser aplicados antes de obter quaisquer atributos da aplica√ß√£o. Caso
+	 * alguma classe utilit√°ria utilize propriedades vitais para seu funcionamento, essas devem ser
 	 * configuradas antes de mais nada.
 	 * @param property Nome da propriedade
 	 * @param value Valore da propriedade
@@ -38,17 +38,17 @@ public class Application {
 		final Object _previous = APPLICATION.PROPERTIES.put(property, value);
 		
 		if(null!= _previous){
-			logging.info("REGISTRANDO *NOVO* VALOR PARA PROPRIEDADE DE APLICA«√O " + property + ": >" + value + "<, antigo: >" + _previous + "<");
+			logging.info("REGISTRANDO *NOVO* VALOR PARA PROPRIEDADE DE APLICA√á√ÉO " + property + ": >" + value + "<, antigo: >" + _previous + "<");
 		} else {
-			logging.info("REGISTRANDO VALOR PARA PROPRIEDADE DE APLICA«√O " + property + ": >" + value + "<");
+			logging.info("REGISTRANDO VALOR PARA PROPRIEDADE DE APLICA√á√ÉO " + property + ": >" + value + "<");
 		}
 	}
 	
 	/**
-	 * Intermediar a obtenÁ„o dos valores configurados ou programaticamente definidos das propriedades.
-	 * @param <T> Tipo genÈrico da propriedade
+	 * Intermediar a obten√ß√£o dos valores configurados ou programaticamente definidos das propriedades.
+	 * @param <T> Tipo gen√©rico da propriedade
 	 * @param property Chave da propriedade.
-	 * @return <code>null</code> caso o valor da propriedade n„o seja resolvido.
+	 * @return <code>null</code> caso o valor da propriedade n√£o seja resolvido.
 	 */
 	@SuppressWarnings("unchecked")
 	public <T> T valueOf(final Class<T> property){
@@ -61,32 +61,32 @@ public class Application {
 	}
 	
 	/**
-	 * Intermediar a obtenÁ„o dos valores configurados ou programaticamente definidos das propriedades.
-	 * @param <T> Tipo genÈrico da propriedade
+	 * Intermediar a obten√ß√£o dos valores configurados ou programaticamente definidos das propriedades.
+	 * @param <T> Tipo gen√©rico da propriedade
 	 * @param type Tipo da propriedade
 	 * @param property Chave da propriedade
-	 * @return <code>null</code> caso o valor da propriedade n„o seja resolvido.
+	 * @return <code>null</code> caso o valor da propriedade n√£o seja resolvido.
 	 */
 	@SuppressWarnings("unchecked")
 	public <T> T valueOf(final Class<T> type, final Object property){
 		T _result = null;
 		
 		_result = (T)APPLICATION.PROPERTIES.get(property);
-		logging.debug("OBTENDO VALOR DA PROPRIEDADE DE APLICA«√O " + property + STRING.IGUAL_SPACE + _result + STRING.PARENTESES_ABRE + type + STRING.PARENTESES_FECHA);
+		logging.debug("OBTENDO VALOR DA PROPRIEDADE DE APLICA√á√ÉO " + property + STRING.IGUAL_SPACE + _result + STRING.PARENTESES_ABRE + type + STRING.PARENTESES_FECHA);
 		
 		return _result;
 	}
 	
 	/**
-	 * Intermediar a obtenÁ„o dos valores configurados ou programaticamente definidos das propriedades.
+	 * Intermediar a obten√ß√£o dos valores configurados ou programaticamente definidos das propriedades.
 	 * @param property Chave da propriedade
-	 * @return <code>null</code> caso a propriedade n„o exista
+	 * @return <code>null</code> caso a propriedade n√£o exista
 	 */
 	public Object valueOf(final Object property){
 		Object _result = null;
 		
 		_result = APPLICATION.PROPERTIES.get(property);
-		logging.debug("OBTENDO VALOR DA PROPRIEDADE DE APLICA«√O " + property + STRING.IGUAL_SPACE + _result);
+		logging.debug("OBTENDO VALOR DA PROPRIEDADE DE APLICA√á√ÉO " + property + STRING.IGUAL_SPACE + _result);
 		
 		return _result;
 	}
