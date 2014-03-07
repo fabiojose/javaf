@@ -5,10 +5,8 @@ import java.text.Format;
 import java.text.ParseException;
 import java.util.Date;
 
-import bradesco.tf.UtilIdentify;
 import cobol.CobolConstants.DEFAULT;
 
-import com.javaf.ObjectPool;
 import com.javaf.Constants.I18N;
 import com.javaf.Constants.STRING;
 import com.javaf.javase.lang.UtilObject;
@@ -23,7 +21,7 @@ import com.javaf.pattern.Deen;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - Fï¿½bio Josï¿½ de Moraes
  *
  */
 public final class CobolDomain {
@@ -32,10 +30,9 @@ public final class CobolDomain {
 	private static final ILogging LOGGING = Logging.loggerOf(CobolDomain.class);
 	
 	private final UtilReflection reflection = UtilReflection.getInstance();
-	private final ObjectPool opool          = ObjectPool.getPool();
 	private final UtilFormat format         = UtilFormat.getInstance();
 	private final UtilObject object         = UtilObject.getInstance();
-	private final UtilIdentify identify     = UtilIdentify.getInstance();
+
 	private CobolDomain(){
 		
 	}
@@ -101,20 +98,6 @@ public final class CobolDomain {
 	
 	public String toString(final Object value, final Format formatter){
 		return formatter.format(value);
-	}
-	
-	public Object toObject(final String cobol, final Class<?> type, final Class<? extends Format> parser) throws ParsingException {
-		
-		Object _result = cobol;
-		if(null!= parser && !NullFormat.class.isAssignableFrom(parser)){
-			
-			final Format _parser = opool.getOrCreate(identify.doID(parser), parser);
-			_result = toObject(cobol, _parser);
-		} else {
-			_result = toObject(cobol, type);
-		}
-		
-		return _result;
 	}
 	
 	@SuppressWarnings("unchecked")
