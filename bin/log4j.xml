@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "../log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	
+	<appender name="JAVAF-APPENDER" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/log/javaf/javaf.log"/>
+		<param name="DatePattern" value="yyyy-MM-dd"/>
+		<param name="append" value="true"/>
+		
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %p [%c] - [%m]%n"/>
+		</layout>
+	</appender>
+	
+	<appender name="CONSOLE-APPENDER" class="org.apache.log4j.ConsoleAppender">		
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %p [%c] - [%m]%n"/>
+		</layout>
+	</appender>
+	
+	<logger name="com.javaf">
+		<level value="trace"/>
+	</logger>
+	
+	<root>
+		<level value="error"/>
+		<appender-ref ref="JAVAF-APPENDER"/>
+		<appender-ref ref="CONSOLE-APPENDER"/>
+	</root>
+	
+</log4j:configuration>
