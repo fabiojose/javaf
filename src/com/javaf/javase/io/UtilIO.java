@@ -83,9 +83,35 @@ public class UtilIO implements Utility {
 	
 	public void move(final File from, final File to) throws IOException {
 		
-		if (!from.renameTo(to)){
-			throw new IOException(I18N.NAO_FOI_POSSIVEL_RENOMEAR_ARQUIVO + from.toString());
+		if(from.isDirectory() && to.isFile()){
+			
+			throw new IllegalArgumentException("arg1 is a directory and arg2 is a file");
+			
 		}
+		
+		if(from.isDirectory() && to.isDirectory()){
+			
+			//mover todos os arquivos
+			final File[] _files = from.listFiles();
+			for(File _file : _files){
+				if(_file.isFile()){
+					final File _to = new File(to, nameOf(_file) + STRING.DOT + extensionOf(_file));
+					move(_file, _to);
+				}
+			}
+ 			
+		} else if(from.isFile() && to.isDirectory()){
+			
+			//mover file1 para o diretorio file2
+			
+		} else if(from.isFile() && !to.exists()){
+			
+			//mover file1 para file2
+			if (!from.renameTo(to)){
+				throw new IOException(I18N.NAO_FOI_POSSIVEL_RENOMEAR_ARQUIVO + from.toString());
+			}
+		}
+		
 	}
 	
 	public DataHandler asDataHandler(final File file){
@@ -323,12 +349,14 @@ public class UtilIO implements Utility {
 		}
 	}
 	
-	public static void main(String...args){
+	public static void main(String...args) throws IOException {
 		final UtilIO _io = UtilIO.getInstance();
 		System.out.println(_io.absoluteOf("com"));
 		
 		System.out.println(_io.toExtension(new File("C:/temp/image.gic"), "png"));
 		System.out.println(_io.nameOf(new File("C:/temp/image.gic")));
 		System.out.println(_io.extensionOf(new File("C:/temp/image.gic")));
+		
+		_io.move(new File("C:/temp"), new File("C:/temp/teste"));
 	}
 }

@@ -16,7 +16,7 @@ import com.javaf.javase.persistence.Column;
 
 /**
  * 
- * @author fabiojm - FÃ¡bio JosÃ© de Moraes
+ * @author fabiojm - Fábio José de Moraes
  *
  */
 public final class Constants {
@@ -26,24 +26,24 @@ public final class Constants {
 	}
 	
 	/**
-	 * Atributos da aplicaÃ§Ã£o.
-	 * @author fabiojm - FÃ¡bio JosÃ© de Moraes
+	 * Atributos da aplicação.
+	 * @author fabiojm - Fábio José de Moraes
 	 *
 	 */
 	public static final class APPLICATION {
 		
 		/**
-		 * Chave para armazenamento do nome de arquivo para internacionalizaÃ§Ã£o no mapa de propriedades da aplicaÃ§Ã£o.
+		 * Chave para armazenamento do nome de arquivo para internacionalização no mapa de propriedades da aplicação.
 		 */
 		public static final String BUNDLE_PROPERTY     = "RESOURCE_BUNDLE";
 		
 		/**
-		 * Chave para armazenamento do nome de arquivo para propriedades do projeto no mapa de propriedades da aplicaÃ§Ã£o.
+		 * Chave para armazenamento do nome de arquivo para propriedades do projeto no mapa de propriedades da aplicação.
 		 */
 		public static final String PROPERTIES_PROPERTY = "PROPERTIES_PROPERTY";
 		
 		/**
-		 * Chave para armazenamento do cÃ³digo do projeto.
+		 * Chave para armazenamento do código do projeto.
 		 */
 		public static final String CODE_PROPERTY       = "CODE_PROPERTY";
 		
@@ -53,20 +53,20 @@ public final class Constants {
 		public static final String NAME_PROPERTY       = "NAME_PROPERTY";
 		
 		/**
-		 * Chave para armazenamento do tÃ­tulo do projeto.
+		 * Chave para armazenamento do título do projeto.
 		 */
 		public static final String TITLE_PROPERTY      = "TITLE_PROPERTY";
 		
 		/**
-		 * Chave para armazenamento da versÃ£o do projeto.<br/>
+		 * Chave para armazenamento da versão do projeto.<br/>
 		 * tipo: {@link String}
 		 */
 		public static final String VERSION_PROPERTY    = "VERSION_PROPERTY";
 		
 		/**
-		 * Chave para armazenamento do caminho absoluto para o diretÃ³rio de arquivos temporÃ¡rios.<br/>
-		 *  - Essa chave armazena uma instÃ¢ncia de <code>java.lang.String</code><br/>
-		 *  - O valor padrÃ£o Ã© carregado da propriedade <code>user.dir</code>
+		 * Chave para armazenamento do caminho absoluto para o diretório de arquivos temporários.<br/>
+		 *  - Essa chave armazena uma instância de <code>java.lang.String</code><br/>
+		 *  - O valor padrão é carregado da propriedade <code>user.dir</code>
 		 * <pre>
 		 * System.getProperty("user.dir");
 		 * </pre>
@@ -75,17 +75,17 @@ public final class Constants {
 		public static final String TEMPORARY_PATH_PROPERTY = "TEMPORARY_PATH_PROPERTY";
 		
 		/**
-		 * Chave para armazenar valor <code>Boolean</code> que indica se as conexÃµes http, https, socket, ftp, etc., devem utilizar proxy.<br/>
-		 * - Essa chave armazena uma instÃ¢ncia de <code>java.lang.Boolean</code>
+		 * Chave para armazenar valor <code>Boolean</code> que indica se as conexões http, https, socket, ftp, etc., devem utilizar proxy.<br/>
+		 * - Essa chave armazena uma instância de <code>java.lang.Boolean</code>
 		 * 
 		 * @see UtilNet
 		 */
 		public static final String NETWORK_PROXY_ON_PROPERTY = "NETWORK_PROXY_ON_PROPERTY";
 		
 		/**
-		 * Chave para armazenar endereÃ§o do host provedor de proxy.<br/>
-		 * - Essa chave armazena uma instï¿½ncia de <code>java.lang.String</code><br/><br/>
-		 * Por padrÃ£o nÃ£o existe proxy ativado, portanto essa propriedade nÃ£o possui valor default.<br/>
+		 * Chave para armazenar endereço do host provedor de proxy.<br/>
+		 * - Essa chave armazena uma instância de <code>java.lang.String</code><br/><br/>
+		 * Por padrão não existe proxy ativado, portanto essa propriedade não possui valor default.<br/>
 		 * Exemplo:
 		 * <pre>
 		 * 192.168.10.10
@@ -96,8 +96,8 @@ public final class Constants {
 		
 		/**
 		 * Chave para armazenar a porta do host provedor de proxy.<br/>
-		 * - Essa chave armazena uma instÃ¢ncia de <code>java.lang.Integer</code><br/><br/>
-		 * Por padrÃ£o nÃ£o existe proxy ativado, portanto essa propriedade nÃ£o possui valor default.<br/>
+		 * - Essa chave armazena uma instância de <code>java.lang.Integer</code><br/><br/>
+		 * Por padrão não existe proxy ativado, portanto essa propriedade não possui valor default.<br/>
 		 * Exemplo:
 		 * <pre>
 		 * 8080
@@ -107,9 +107,9 @@ public final class Constants {
 		public static final String NETWORK_PROXY_PORT_PROPERTY = "NETWORK_PROXY_PORT_PROPERTY";
 		
 		/**
-		 * Chave para armazenar instÃ¢ncia para autenticaÃ§Ã£o de usuÃ¡rio e senha do proxy.<br/>
-		 * - Essa chave armazena uma instÃ¢ncia de <code>java.net.PasswordAuthentication</code><br/><br/>
-		 * Por padrÃ¢o nÃ£o existe proxy ativado, portanto essa propriedade nÃ£o possui valor default.<br/>
+		 * Chave para armazenar instância para autenticação de usuário e senha do proxy.<br/>
+		 * - Essa chave armazena uma instância de <code>java.net.PasswordAuthentication</code><br/><br/>
+		 * Por padrão não existe proxy ativado, portanto essa propriedade não possui valor default.<br/>
 		 * 
 		 * @see UtilNet
 		 * @see PasswordAuthentication
@@ -117,14 +117,14 @@ public final class Constants {
 		public static final String NETWORK_PROXY_AUTHENTICATION_PROPERTY = "NETWORK_PROXY_AUTHENTICATION_PROPERTY";
 		
 		/**
-		 * PolÃ­tica para criaÃ§Ã£o de instÃ¢ncias das classes util, retornada no mÃ©todo <code>getInstance</code>.<br/>
+		 * Política para criação de instâncias das classes util, retornada no método <code>getInstance</code>.<br/>
 		 * tipo: {@link InstancePolicy}
 		 * @see InstancePolicy
 		 */
 		public static final String UTIL_INSTANCIES_POLICY = "UTIL_INSTANCIES_POLICY";
 		
 		/**
-		 * Mapeamento de intercionalizaÃ§Ã£o, ligando qualquer chave a um texto localizado.<br/>
+		 * Mapeamento de intercionalização, ligando qualquer chave à um texto localizado.<br/>
 		 * tipo: {@link Map}
 		 * 
 		 */
@@ -300,107 +300,107 @@ public final class Constants {
 		
 		public static final String EVENT = "Event";
 		
-		public static final String NAO_FOI_POSSIVEL_RENOMEAR_ARQUIVO = "Nï¿½o foi possï¿½vel renomear arquivo: ";
-		public static final String METODO_SETTER_NAO_ENCONTRADO = "Mï¿½todo setter nï¿½o encontrado";
-		public static final String ARGUMENTO_NAO_SIMPLES = "Argumento nï¿½o se trata de um tipo simples";
-		public static final String CLASSE_INFORMADA_NAO_EXTENSAO = "Classe informada nï¿½o se trata de uma extensï¿½o de {0}";
-		public static final String METODO_SETTER_NAO_ENCONTRADO_ATT = "Mï¿½todo setter nï¿½o encontrado para atributo: {0}";
-		public static final String ARGUMENTO_NAO_SUBCLASSE = "Argumento nï¿½o ï¿½ uma subclasse de {0}";
+		public static final String NAO_FOI_POSSIVEL_RENOMEAR_ARQUIVO = "Não foi possível renomear arquivo: ";
+		public static final String METODO_SETTER_NAO_ENCONTRADO = "Método setter não encontrado";
+		public static final String ARGUMENTO_NAO_SIMPLES = "Argumento não se trata de um tipo simples";
+		public static final String CLASSE_INFORMADA_NAO_EXTENSAO = "Classe informada não se trata de uma extensão de {0}";
+		public static final String METODO_SETTER_NAO_ENCONTRADO_ATT = "Método setter não encontrado para atributo: {0}";
+		public static final String ARGUMENTO_NAO_SUBCLASSE = "Argumento não é uma subclasse de {0}";
 		public static final String ARGUMENTO_N_VALOR_DESCONHECIDO = "Valor do Argumento{0} desconhecido: {1}";
-		public static final String PROPRIEDADE_NAO_ENCONTRADA = "Propriedade nï¿½o encontrada: {0}";
-		public static final String X_NAO_PODE_SER_OBTIDO = "{0} da implementaï¿½ï¿½o nï¿½o pode ser obtido: {1}";
-		public static final String ARGUMENTO_N_DEVE_SER_UMA_INSTANCIA = "Argumento{0} dever ser uma instï¿½ncia de {1}";
-		public static final String OPERACAO_DESCONHECIDA = "Operaï¿½ï¿½o desconhecida: {0}";
+		public static final String PROPRIEDADE_NAO_ENCONTRADA = "Propriedade não encontrada: {0}";
+		public static final String X_NAO_PODE_SER_OBTIDO = "{0} da implementação não pode ser obtido: {1}";
+		public static final String ARGUMENTO_N_DEVE_SER_UMA_INSTANCIA = "Argumento{0} dever ser uma instância de {1}";
+		public static final String OPERACAO_DESCONHECIDA = "Operação desconhecida: {0}";
 		public static final String DEFAULT = "(Default) ";
-		public static final String CONTAINER_DSN_X_NAO_POSSUI = "Container DSN {0} nï¿½o possui ï¿½rea obrigatï¿½ria: {1}";
-		public static final String CONTAINER_DSN_NAO_E = "Container DSN nï¿½o se trata do fluxo {0}: {1}";
-		public static final String CLASSE_X_NAO_ANOTADA_COM = "Class {0} nï¿½o estï¿½ anotada com {1}";
+		public static final String CONTAINER_DSN_X_NAO_POSSUI = "Container DSN {0} não possui área obrigatória: {1}";
+		public static final String CONTAINER_DSN_NAO_E = "Container DSN não se trata do fluxo {0}: {1}";
+		public static final String CLASSE_X_NAO_ANOTADA_COM = "Class {0} não está anotada com {1}";
 		public static final String AREA_DE_TRABALHO_NO_DSN = "Area de trabalho no DSN: ";
 		public static final String LEITURA_ATRIBUTO_SIMPLES = "Leitura atributo simples ";
 		public static final String DO_TIPO = " do tipo ";
 		public static final String OBTENDO_SIMPLE_OBJECT_NA_AREA_DE_TRABALHO = "Obtendo SimpleObject na area de trabalho: ";
-		public static final String VALOR_NAO_FOI_POSSIVEL_TRANSFORMAR = "(  VALOR) Nï¿½o foi possï¿½vel transformar: ";
+		public static final String VALOR_NAO_FOI_POSSIVEL_TRANSFORMAR = "(  VALOR) Não foi possível transformar: ";
 		public static final String DEFAULT_APLICAR = "(DEFAULT) Aplicar: ";
-		public static final String DEFAULT_NAO_FOI_POSSIVEL_TRANSFORMAR = "(DEFAULT) Nï¿½o foi possï¿½vel transformar: ";
-		public static final String NAO_FOI_POSSIVEL_INVOCAR_SET_DO_ATRIBUTO = "Nï¿½o foi possï¿½vel invocar o set do atributo ";
+		public static final String DEFAULT_NAO_FOI_POSSIVEL_TRANSFORMAR = "(DEFAULT) Não foi possível transformar: ";
+		public static final String NAO_FOI_POSSIVEL_INVOCAR_SET_DO_ATRIBUTO = "Não foi possível invocar o set do atributo ";
 		public static final String ATRIBUTO = "Atributo ";
-		public static final String NAO_POSSUI_SEU_RESPECTIVO_SETTER = " nï¿½o possui seu respectivo 'setter'";
+		public static final String NAO_POSSUI_SEU_RESPECTIVO_SETTER = " não possui seu respectivo 'setter'";
 		public static final String DYNAMIC = "(DYNAMIC) ";
-		public static final String INSTANCIA_NAO_E_UMA_SUBCLASSE_DE = "Instï¿½ncia nï¿½o ï¿½ uma subclasse de ";
+		public static final String INSTANCIA_NAO_E_UMA_SUBCLASSE_DE = "Instância não é uma subclasse de ";
 		public static final String LEITURA_ATRIBUTO_EMBARCADO = "Leitura atributo embarcado ";
 		public static final String ATRIBUTO_MARCADO_COMO = "Atributo marcado como ";
-		public static final String ESTA_NULL = " estï¿½ null";
+		public static final String ESTA_NULL = " está null";
 		public static final String ATRIBUTO_MARCADO_COMO_TRANSIENT = "Atributo marcado com Transient: ";
-		public static final String NAO_PODE_SER_OBTIDO = " nï¿½o pï¿½de ser obtido";
+		public static final String NAO_PODE_SER_OBTIDO = " não pôde ser obtido";
 		public static final String LEITURA_ATRIBUTO_OCCURS = "Leitura atributo occurs ";
 		public static final String OBTENDO_LIST_OBJECT_NA_AREA_DE_TRABALHO = "Obtendo Listobject na area de trabalho: ";
-		public static final String DEVE_SER_UMA_IMPLEMENTACAO_DE = " deve ser uma implementaï¿½ï¿½o de ";
-		public static final String OCCURS_NAO_ESTA_MAPEADO_PARA_ESCRITA = "Occurs nï¿½o estï¿½ mapeado para escrita: ";
+		public static final String DEVE_SER_UMA_IMPLEMENTACAO_DE = " deve ser uma implementação de ";
+		public static final String OCCURS_NAO_ESTA_MAPEADO_PARA_ESCRITA = "Occurs não está mapeado para escrita: ";
 		public static final String GRAVANDO_ATRIBUTO_SIMPLES = "Gravando atributo simples ";
-		public static final String INVOCACAO_DO_GETTER_GEROU_EXCECAO = "Invocaï¿½ï¿½o do getter gerou exceï¿½ï¿½o.";
+		public static final String INVOCACAO_DO_GETTER_GEROU_EXCECAO = "Invocação do getter gerou exceção.";
 		public static final String GRAVANDO_ATRIBUTO_EMBARADO = "Gravando atributo embarcado ";
 		public static final String GRAVANDO_ATRIBUTO_OCCURS = "Gravando atributo occurs ";
 		public static final String ANOTADO_PARA_GRAVAR_OCORRENCIAS_OFFSET = "Anotado para gravar ocorrencias offset: size=";
 		public static final String OFFSET = ", offset=";
 		public static final String OCORRENCIAS_OFFSET_FORAM_GRAVADAS = "Ocorrencias offset foram gravadas: ";
-		public static final String NAO_FORAM_GRAVADAS_OFFSET = "Nï¿½o foram gravadas ocorrencias offset por erro em instï¿½ncia o objeto base.";
+		public static final String NAO_FORAM_GRAVADAS_OFFSET = "Não foram gravadas ocorrencias offset por erro em instância o objeto base.";
 		public static final String LIMPANDO_AREA_DO_FWO = "Limpando area do FWO: ";
-		public static final String ARGUMENTO_NAO_PODE_SER_INSTANCIADO = "Argumento nï¿½o pï¿½de ser instanciado: {0}";
+		public static final String ARGUMENTO_NAO_PODE_SER_INSTANCIADO = "Argumento não pôde ser instanciado: {0}";
 		public static final String ARGUMENTO_N_VALOR_ILEGAL = "Argumento{0} possui tipo ilegal: {1}";
-		public static final String ATRIBUTO_NAO_POSSUI_SETTER = "Atributo {0} nï¿½o possui seu respectivo setter";
-		public static final String CONFIGURADO_PERSISTENCIA_INSTANCIA_NULL = "Configurado para construir estrutura de persistï¿½ncia, mas nï¿½o hï¿½ instï¿½ncia disponï¿½vel";
-		public static final String COLECAO_NAO_ARMAZENA = "Coleï¿½ï¿½o nï¿½o armazena o tipo {0}: {1}";
-		public static final String COLECAO_NAO_POSSUI_TIPO = "Coleï¿½ï¿½o nï¿½o possui tipo armazenado: {0}";
-		public static final String TIPO_NAO_MAPEADO_DSN = "Tipo do nï¿½o mapeado para Data Service Node: {0}";
+		public static final String ATRIBUTO_NAO_POSSUI_SETTER = "Atributo {0} não possui seu respectivo setter";
+		public static final String CONFIGURADO_PERSISTENCIA_INSTANCIA_NULL = "Configurado para construir estrutura de persistência, mas não há instância disponível";
+		public static final String COLECAO_NAO_ARMAZENA = "Coleção não armazena o tipo {0}: {1}";
+		public static final String COLECAO_NAO_POSSUI_TIPO = "Coleção não possui tipo armazenado: {0}";
+		public static final String TIPO_NAO_MAPEADO_DSN = "Tipo do não mapeado para Data Service Node: {0}";
 		public static final String CONFIRMA_CANCELAR = "Tem certeza que deseja cancelar?";
 		public static final String CANCELAR = "Cancelar";
-		public static final String X_NAO_FOI_ENCONTRADAO = "{0} nï¿½o foi encontrado: {1}";
-		public static final String GRAVANDO_AREA_INPUT_FLUXO = "Gravando ï¿½rea de input do fluxo: {0}";
+		public static final String X_NAO_FOI_ENCONTRADAO = "{0} não foi encontrado: {1}";
+		public static final String GRAVANDO_AREA_INPUT_FLUXO = "Gravando área de input do fluxo: {0}";
 		public static final String EXECUTANDO_FLUXO = "Executando fluxo: {0}";
-		public static final String LEITURA_AREA_OUTPUT_FLUXO = "Leitura da ï¿½rea de output do fluxo: {0}";
-		public static final String RESULTADO_FLUXO_NAO_SUCESSO = "Resultado do fluxo nï¿½o sinaliza sucesso: {0}";
-		public static final String PROBLEMA_GRAVACAO_AREA_FLUXO = "Problema na gravaï¿½ï¿½o da ï¿½rea de entrada do fluxo: {0}";
-		public static final String PROBLEMA_LEITURA_AREA_FLUXO = "Problema na leitura da ï¿½rea de saï¿½da do fluxo: {0}";
-		public static final String PROBLEMA_EXECUCAO_FLUXO = "Problema na execuï¿½ï¿½o do fluxo: {0}";
-		public static final String CLASSE_NAO_ANOTADA = "Classe nï¿½o estï¿½ anotada com {0}: {1}";
-		public static final String INSTANCIA_NAO_ENCONTRADA_WRAPPER = "Instï¿½ncia de {0} nï¿½o estï¿½ presente no wrapper";
-		public static final String INSTANCIA_NULA = "Instï¿½ncia ï¿½ null!";
+		public static final String LEITURA_AREA_OUTPUT_FLUXO = "Leitura da área de output do fluxo: {0}";
+		public static final String RESULTADO_FLUXO_NAO_SUCESSO = "Resultado do fluxo não sinaliza sucesso: {0}";
+		public static final String PROBLEMA_GRAVACAO_AREA_FLUXO = "Problema na gravação da área de entrada do fluxo: {0}";
+		public static final String PROBLEMA_LEITURA_AREA_FLUXO = "Problema na leitura da área de saída do fluxo: {0}";
+		public static final String PROBLEMA_EXECUCAO_FLUXO = "Problema na execução do fluxo: {0}";
+		public static final String CLASSE_NAO_ANOTADA = "Classe não está anotada com {0}: {1}";
+		public static final String INSTANCIA_NAO_ENCONTRADA_WRAPPER = "Instância de {0} não está presente no wrapper";
+		public static final String INSTANCIA_NULA = "Instância é null!";
 		public static final String FWO_CALLING_EXCEPTION1 = "Execute o invoke(T, DataServiceNodeProvider, IEventsServiceProvider, IDataServiceNode) para construir o estado interno da chamada";
 		public static final String PREENCHER = "Preencher:";
-		public static final String DEVE_SER_INFERIOR_OU_IGUAL = " deve ser inferior ou igual ï¿½ ";
+		public static final String DEVE_SER_INFERIOR_OU_IGUAL = " deve ser inferior ou igual à ";
 		public static final String SELECIONE_A_CHECAGEM = "Selecione a checagem {0}";
 		public static final String SELECIONE_AO_MENOS_X_CHECAGENS = "Selecione ao menos {0} checagem(ns)";
 		public static final String SELECIONE_EXATAMENTE_X_CHECAGENS = "Selecione exatamente {0} checagem(ns): {1}";
-		public static final String SELECIONE_UMA_OPCAO_EM = "Selecione uma opï¿½ï¿½o em {0}";
-		public static final String SELECIONAR_UMA_DAS_OPCOES = "Selecionar uma das opï¿½ï¿½es:";
-		public static final String METHODO_X_NAO_RETORNOU_INSTANCIA_DE = "Mï¿½todo {0} nï¿½o retornou uma instï¿½ncia de {1}: {2}";
-		public static final String CLASSE_X_NAO_SEGUE_GENERICS = "Classe {0} nï¿½o segue regras da API Generics";
-		public static final String IDENTIFICADOR_VALIDADOR_NAO_ENCONTRADO_NAS_CONFIGURACOES = "Idenficador do Validador nï¿½o encontrado nas configuraï¿½ï¿½es: ";
-		public static final String NENHUMA_CONFIGURACAO_DE_VALIDADORES_ENCONTRADA_NO_EVENT_VALIDATOR = "Nenhuma configuraï¿½ï¿½o de validadores encontrada no EventValidator.";
-		public static final String NAO_FOI_ENCONTRADA_CONFIGURACAO_PARA_OPERACAO = "Nï¿½o foi encontrada configuraï¿½ï¿½o para operaï¿½ï¿½o: ";
-		public static final String NAO_FOI_ENCONTARDA_CLASSE_DE_VIEW = "Nï¿½o foi encontrada classe de View: ";
-		public static final String NAO_FOI_ENCONTRADA_CLASSE_MODEL_CONFIGURADA = "Nï¿½o foi encontrada classe model configurada: ";
-		public static final String CLASSE_CONFIGURADA_FILTRO_NAO_ESTENDE = "Classe configurada como filtro de pesquisar nï¿½o estende ";
-		public static final String NAO_FOI_ENCONTRADA_CLASSE_HELPER_CONFIGURADA = "Nï¿½o foi encontrada classe helper configurada: ";
-		public static final String NAO_FOI_ENCONTRADA_CLASSE_FILTRO_PEQUISAR_CONFIGURADA = "Nï¿½o foi encontrada classe filtro de pesquisar configurada: ";
+		public static final String SELECIONE_UMA_OPCAO_EM = "Selecione uma opção em {0}";
+		public static final String SELECIONAR_UMA_DAS_OPCOES = "Selecionar uma das opções:";
+		public static final String METHODO_X_NAO_RETORNOU_INSTANCIA_DE = "Método {0} não retornou uma instância de {1}: {2}";
+		public static final String CLASSE_X_NAO_SEGUE_GENERICS = "Classe {0} não segue regras da API Generics";
+		public static final String IDENTIFICADOR_VALIDADOR_NAO_ENCONTRADO_NAS_CONFIGURACOES = "Idenficador do Validador não encontrado nas configurações: ";
+		public static final String NENHUMA_CONFIGURACAO_DE_VALIDADORES_ENCONTRADA_NO_EVENT_VALIDATOR = "Nenhuma configuração de validadores encontrada no EventValidator.";
+		public static final String NAO_FOI_ENCONTRADA_CONFIGURACAO_PARA_OPERACAO = "Não foi encontrada configuração para operação: ";
+		public static final String NAO_FOI_ENCONTARDA_CLASSE_DE_VIEW = "Não foi encontrada classe de View: ";
+		public static final String NAO_FOI_ENCONTRADA_CLASSE_MODEL_CONFIGURADA = "Não foi encontrada classe model configurada: ";
+		public static final String CLASSE_CONFIGURADA_FILTRO_NAO_ESTENDE = "Classe configurada como filtro de pesquisar não estende ";
+		public static final String NAO_FOI_ENCONTRADA_CLASSE_HELPER_CONFIGURADA = "Não foi encontrada classe helper configurada: ";
+		public static final String NAO_FOI_ENCONTRADA_CLASSE_FILTRO_PEQUISAR_CONFIGURADA = "Não foi encontrada classe filtro de pesquisar configurada: ";
 		public static final String WAS_REMOVED = " was removed.";
 		public static final String APPLYING_LABELLING_HOLDERS = "Applying Labelling holders: {0}";
 		public static final String LABELLING_HOLDERS_DONE = "Labelling holders done: {0}";
-		public static final String BOTAO_NAO_EXISTE_LAYOUT = "Botï¿½o {0} nï¿½o existe no layout {1}";
-		public static final String CONFIRMAR_INCLUSAO = "Confirmar inclusï¿½o?";
-		public static final String CONFIRMAR_ALTERACAO = "Confirmar alteraï¿½ï¿½o?";
-		public static final String CONFIRMAR_EXCLUSAO = "Confirmar exclusï¿½o?";
-		public static final String PROPRIEDADE_NAO_CONFIGURADA_PROJETO = "Propriedade nï¿½o configurada no projeto: {0}";
+		public static final String BOTAO_NAO_EXISTE_LAYOUT = "Botão {0} não existe no layout {1}";
+		public static final String CONFIRMAR_INCLUSAO = "Confirmar inclusão?";
+		public static final String CONFIRMAR_ALTERACAO = "Confirmar alteração?";
+		public static final String CONFIRMAR_EXCLUSAO = "Confirmar exclusão?";
+		public static final String PROPRIEDADE_NAO_CONFIGURADA_PROJETO = "Propriedade não configurada no projeto: {0}";
 		public static final String CADU_CHAMADA_V2 = "Chamada CADU V2";
 		public static final String CADU_LOG_INICIANDO_CHAMADA = "Iniciando chamada CADU V2...";
 		public static final String CADU_LOG_FINALIZANDO_CHAMADA_SUCESSO = "Finalizando a chamada CADU V2 com a Pessoa identificada: CLUB={0}";
 		public static final String CADU_LOG_FINALIZANDO_CHAMADA_NAO_IDENT = "Finalizando a chamada CADU V2 sem identificar a Pessoa.";
-		public static final String CADU_CLIENTE_NAO_IDENT_CAD = "O Cliente nï¿½o foi identificado ou cadastrado no CADU";
+		public static final String CADU_CLIENTE_NAO_IDENT_CAD = "O Cliente não foi identificado ou cadastrado no CADU";
 		public static final String DESEJA_COMPLETAR_CADASTRO = "Deseja completar cadastro?";
 		public static final String INVOCANDO_URL = "Invocando URL: {0}";
 		public static final String INICIANDO_LEITURA_DAS_LINHAS = "Iniciando leitura das linhas ...";
 		public static final String FINALIZANDO_LEITURA_DAS_LINHAS = "Finalizando leitura das linhas.";
-		public static final String APLICATIVO_ATHIC_NAO_SUCESSO = "Aplicativo ATHIC Scanner nï¿½o pode ser executado.\n\nVerifique as configuraï¿½ï¿½es.";
+		public static final String APLICATIVO_ATHIC_NAO_SUCESSO = "Aplicativo ATHIC Scanner não pode ser executado.\n\nVerifique as configurações.";
 		public static final String ANOTADO_OU_EXTENDER = "{0} deve estar anotado com {1} ou ser subclasse de {2}";
 		
 		public static final String E = "e ";
@@ -449,8 +449,8 @@ public final class Constants {
 		
 		public static final String MIL = "mil";
 		
-		public static final String VALOR_MAXIMO_PARA_VERBALIZE_E_DE = "Valor mï¿½ximo para verbalize ï¿½ de {0}";
-		public static final String ARGUMENTO_N_ESTA_NULL = "Argumento{0} estï¿½ null";
+		public static final String VALOR_MAXIMO_PARA_VERBALIZE_E_DE = "Valor máximo para verbalize é de {0}";
+		public static final String ARGUMENTO_N_ESTA_NULL = "Argumento{0} está null";
 		public static final String NENHUM_RESETER_REGISTRADO_PARA = "Nenhum reseter registrado para {0}";
 		
 	}
@@ -467,17 +467,17 @@ public final class Constants {
 		public static final String ENUM_VALUE_OF_METHOD = "valueOf(java.lang.String)";
 	
 		/**
-		 * Prefixo para mï¿½todos getter.
+		 * Prefixo para métodos getter.
 		 */
 		public static final String GETTER_PREFIX = "get";
 		
 		/**
-		 * Prefixo para mï¿½todos setter.
+		 * Prefixo para métodos setter.
 		 */
 		public static final String SETTER_PREFIX = "set";
 		
 		/**
-		 * Prefixo para mï¿½todos "get" do tipo boolean
+		 * Prefixo para métodos "get" do tipo boolean
 		 */
 		public static final String IS_PREFIX = "is";
 		
@@ -556,9 +556,9 @@ public final class Constants {
 			MODIFIABLE_PESSOAS_TYPE.put("F",      PESSOA_FISICA);
 			MODIFIABLE_PESSOAS_TYPE.put("f",      PESSOA_FISICA);
 			MODIFIABLE_PESSOAS_TYPE.put("Fisica", PESSOA_FISICA);
-			MODIFIABLE_PESSOAS_TYPE.put("Fï¿½sica", PESSOA_FISICA);
+			MODIFIABLE_PESSOAS_TYPE.put("Física", PESSOA_FISICA);
 			MODIFIABLE_PESSOAS_TYPE.put("fisica", PESSOA_FISICA);
-			MODIFIABLE_PESSOAS_TYPE.put("fï¿½sica", PESSOA_FISICA);
+			MODIFIABLE_PESSOAS_TYPE.put("física", PESSOA_FISICA);
 			MODIFIABLE_PESSOAS_TYPE.put("Fis",    PESSOA_FISICA);
 			
 			MODIFIABLE_PESSOAS_TYPE.put("JURIDICA", PESSOA_JURIDICA);
@@ -566,9 +566,9 @@ public final class Constants {
 			MODIFIABLE_PESSOAS_TYPE.put("J",        PESSOA_JURIDICA);
 			MODIFIABLE_PESSOAS_TYPE.put("j",        PESSOA_JURIDICA);
 			MODIFIABLE_PESSOAS_TYPE.put("Juridica", PESSOA_JURIDICA);
-			MODIFIABLE_PESSOAS_TYPE.put("Jurï¿½dica", PESSOA_JURIDICA);
+			MODIFIABLE_PESSOAS_TYPE.put("Jurídica", PESSOA_JURIDICA);
 			MODIFIABLE_PESSOAS_TYPE.put("juridica", PESSOA_JURIDICA);
-			MODIFIABLE_PESSOAS_TYPE.put("jurï¿½dica", PESSOA_JURIDICA);
+			MODIFIABLE_PESSOAS_TYPE.put("jurídica", PESSOA_JURIDICA);
 			MODIFIABLE_PESSOAS_TYPE.put("Jur",      PESSOA_JURIDICA);
 		};
 		public static final Map<Object, Object> PESSOAS_TIPO = Collections.unmodifiableMap(MODIFIABLE_PESSOAS_TYPE);
@@ -627,12 +627,12 @@ public final class Constants {
 	
 	public static final class FORMATTERS {
 		/**
-		 * Quatro dï¿½gitos decimais, inclusive zeros ï¿½ esquerda.
+		 * Quatro dígitos decimais, inclusive zeros à esquerda.
 		 */
 		public static final DecimalFormat DECIMAL_4DIGITOS = new DecimalFormat("0000");
 		
 		/**
-		 * Quatro dï¿½gitos decimais, inclusive zeros ï¿½ esquerda.
+		 * Quatro dígitos decimais, inclusive zeros à esquerda.
 		 */
 		public static final DecimalFormat DECIMAL_5DIGITOS = new DecimalFormat("00000");
 		

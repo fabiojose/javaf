@@ -9,7 +9,7 @@ import com.javaf.pattern.factory.IFactory;
 
 /**
  * 
- * @author fabiojm - F√°bio Jos√© de Moraes
+ * @author fabiojm - F·bio JosÈ de Moraes
  *
  */
 public class Bagman {
@@ -85,11 +85,11 @@ public class Bagman {
 	}
 	
 	/**
-	 * Obter inst√¢ncia de classes de Utilidades.
-	 * @param <T> Tipo gen√©rico de implementa√ß√£o de <code>Utility</code>
+	 * Obter inst‚ncia de classes de Utilidades.
+	 * @param <T> Tipo genÈrico de implementaÁ„o de <code>Utility</code>
 	 * @param clazz Tipo da classe de utilidades
-	 * @param factory F√°brica de inst√¢ncia da classe de utilidades.
-	 * @return Inst√¢ncia obedecendo a pol√≠tica de cria√ß√£o.
+	 * @param factory F·brica de inst‚ncia da classe de utilidades.
+	 * @return Inst‚ncia obedecendo a polÌtica de criaÁ„o.
 	 * @see APPLICATION#UTIL_INSTANCIES_POLICY
 	 * @see Application#valueOf(Class, Object)
 	 * @see Application#register(Object, Object)
