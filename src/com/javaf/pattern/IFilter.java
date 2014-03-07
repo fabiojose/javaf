@@ -2,9 +2,9 @@ package com.javaf.pattern;
 
 /**
  * 
- * @author fabiojm - F·bio JosÈ de Moraes
+ * @author fabiojm - F√°bio Jos√© de Moraes
  *
- * @param <T> Tipo do object onde a implementaÁ„o do filtro ser· aplicada.
+ * @param <T> Tipo do object onde a implementa√ß√£o do filtro ser√° aplicada.
  */
 public interface IFilter<T> {
 

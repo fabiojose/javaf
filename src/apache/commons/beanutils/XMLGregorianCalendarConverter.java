@@ -15,6 +15,11 @@ import com.javaf.javase.logging.ILogging;
 import com.javaf.javase.logging.Logging;
 import com.javaf.javase.text.UtilFormat;
 
+/**
+ * 
+ * @author fabiojm - Fábio José de Moraes
+ *
+ */
 public class XMLGregorianCalendarConverter implements Converter {
 	
 	private final ILogging logging = Logging.loggerOf(getClass());

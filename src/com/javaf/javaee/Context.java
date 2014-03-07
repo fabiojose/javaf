@@ -8,7 +8,7 @@ import com.javaf.javase.logging.Logging;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public final class Context {
@@ -17,7 +17,7 @@ public final class Context {
 	private static final ILogging LOGGING = Logging.loggerOf(Context.class);
 	
 	/**
-	 * Chave onde se pode registrar o contexto aplicação Servlet.
+	 * Chave onde se pode registrar o contexto aplicaÃ§Ã£o Servlet.
 	 * @see #put(Object, Object)
 	 * @see #get(Object)
 	 */

@@ -15,7 +15,7 @@ import com.javaf.javase.text.NullFormat;
 /**
  * Configura um determinado campo do book em atributo de classe.
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 @Documented

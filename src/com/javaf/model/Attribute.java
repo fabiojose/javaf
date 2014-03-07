@@ -1,10 +1,10 @@
 package com.javaf.model;
 
 /**
- * Implementa a representação de chave e tipo de atributo
- * @author fabiojm - Fábio José de Moraes
+ * Implementa a representaÃ§Ã£o de chave e tipo de atributo
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
- * @param <T> Tipo genérico do atributo
+ * @param <T> Tipo genÃ©rico do atributo
  */
 public final class Attribute<T> {
 
@@ -17,7 +17,7 @@ public final class Attribute<T> {
 	}
 
 	/**
-	 * Obtem a chave que é o nome do atributo
+	 * Obtem a chave que Ã© o nome do atributo
 	 * @return
 	 */
 	public Object getKey() {

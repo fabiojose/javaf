@@ -2,7 +2,7 @@ package com.javaf.pattern;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public abstract class AbstractCommand implements ICommand {

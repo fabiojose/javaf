@@ -2,9 +2,9 @@ package com.javaf.pattern;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
- * @param <T> Tipo genérico de retorno do caso executado.
+ * @param <T> Tipo genÃ©rico de retorno do caso executado.
  */
 public interface ICase<T> {
 

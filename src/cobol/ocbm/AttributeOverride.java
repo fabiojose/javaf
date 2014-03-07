@@ -10,7 +10,7 @@ import cobol.CobolConstants.OCBM;
 
 /**
  * Sobrescreve em um getter o mapeamento Field de uma determinada classe.
- * @author fabiojm - F·bio JosÈ de Moraes
+ * @author fabiojm - F√°bio Jos√© de Moraes
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
@@ -24,7 +24,7 @@ public @interface AttributeOverride {
 	String nome() default OCBM.AUSENTE;
 
 	/**
-	 * Nome do atributo din‚mico na classe, ou seja, algum que n„o exista
+	 * Nome do atributo din√¢mico na classe, ou seja, algum que n√£o exista
 	 * @return
 	 */
 	Dynamic dynamic() default @Dynamic(nome = OCBM.AUSENTE, type = Object.class);

@@ -1,8 +1,8 @@
 package com.javaf;
 
 /**
- * Interface para marcação das classes de Utilidades.
- * @author fabiojm - Fábio José de Moraes
+ * Interface para marcaÃ§Ã£o das classes de Utilidades.
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public interface Utility {

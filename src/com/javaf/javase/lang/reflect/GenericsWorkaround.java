@@ -7,10 +7,10 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Marcador para contornar o apagamento de tipos genéricos pelo compilador.<br/>
- * Tem o objetivo o suporte à classe UtilReflection.
+ * Marcador para contornar o apagamento de tipos genÃ©ricos pelo compilador.<br/>
+ * Tem o objetivo o suporte Ã© classe UtilReflection.
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

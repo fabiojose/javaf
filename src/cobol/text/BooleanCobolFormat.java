@@ -13,8 +13,8 @@ import cobol.CobolConstants.DEFAULT;
 
 
 /**
- * Formato padr„o de booleano para cobol book.
- * @author fabiojm - F·bio JosÈ de Moraes
+ * Formato padr√£o de booleano para cobol book.
+ * @author fabiojm - F√°bio Jos√© de Moraes
  *
  */
 public final class BooleanCobolFormat extends Format {

@@ -4,7 +4,7 @@ public interface IQuery {
 
 	/**
 	 * @throws PersistenceException
-	 * @throws IllegalStateException Caso a consulta j· tenha sido executada.
+	 * @throws IllegalStateException Caso a consulta j√° tenha sido executada.
 	 */
 	IResults execute();
 	

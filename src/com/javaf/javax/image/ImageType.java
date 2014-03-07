@@ -2,7 +2,7 @@ package com.javaf.javax.image;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public enum ImageType {

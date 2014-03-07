@@ -2,9 +2,9 @@ package com.javaf.model;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
- * @param <V> Tipo genérico do valor armazenado.
+ * @param <V> Tipo genÃ©rico do valor armazenado.
  */
 public abstract class ValuePlace<V> {
 

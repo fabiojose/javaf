@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 
 /**
  * Conjuto de sobrescritas do mapeamento de occurrs
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 @Documented

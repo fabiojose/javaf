@@ -116,7 +116,7 @@ public final class UtilCollection implements Utility {
 	}
 	
 	/**
-	 * Carregar os valores de um arquivo Properties, que obeÁa o seguinte padr„o:<br>
+	 * Carregar os valores de um arquivo Properties, que obe√ßa o seguinte padr√£o:<br>
 	 * <pre>
 	 *  0 = value 0
 	 *  1 = value 1
@@ -124,10 +124,10 @@ public final class UtilCollection implements Utility {
 	 *  ...
 	 *  n = value n
 	 * </pre>
-	 * Ou seja, as chaves s„o n˙meros de 0 atÈ n.
+	 * Ou seja, as chaves s√£o n√∫meros de 0 at√© n.
 	 * 
 	 * @param properties
-	 * @return Uma lista contendo os valores de cada chave numÈrica ou uma lista vazia caso ocorra alguma exceÁ„o de I/O.
+	 * @return Uma lista contendo os valores de cada chave num√©rica ou uma lista vazia caso ocorra alguma exce√ß√£o de I/O.
 	 */
 	public List<String> listOf(final InputStream properties){
 		final List<String> _result = new ArrayList<String>();
@@ -180,7 +180,7 @@ public final class UtilCollection implements Utility {
 	}
 	
 	/**
-	 * Carregar os valores de um arquivo Properties, que obeÁa o seguinte padr„o:<br>
+	 * Carregar os valores de um arquivo Properties, que obe√ßa o seguinte padr√£o:<br>
 	 * <pre>
 	 *  0.key   = key 0
 	 *  0.value = value 0
@@ -194,10 +194,10 @@ public final class UtilCollection implements Utility {
 	 *  n.key   = key n
 	 *  n.value = value n
 	 * </pre>
-	 * Ou seja, as chaves s„o n˙meros de 0 atÈ n cada qual com uma propriedade key e outra value
+	 * Ou seja, as chaves s√£o n√∫meros de 0 at√© n cada qual com uma propriedade key e outra value
 	 * 
 	 * @param properties
-	 * @return Um mapa contendo os valores de cada chave numÈrica ou um mapa vazio caso ocorra alguma exceÁ„o de I/O.
+	 * @return Um mapa contendo os valores de cada chave num√©rica ou um mapa vazio caso ocorra alguma exce√ß√£o de I/O.
 	 */
 	public <K, V> Map<K, V> mapOf(final InputStream properties, final ValueOf<String, K> keyValueOf, final ValueOf<String, V> valueOf){
 		final Map<K, V> _result = new HashMap<K, V>();

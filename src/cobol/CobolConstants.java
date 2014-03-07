@@ -17,7 +17,7 @@ import cobol.text.BooleanCobolFormat;
 
 /**
  * 
- * @author fabiojm - F·bio JosÈ de Moraes
+ * @author fabiojm - F√°bio Jos√© de Moraes
  *
  */
 public final class CobolConstants {
@@ -27,7 +27,7 @@ public final class CobolConstants {
 	}
 	
 	/**
-	 * Expıe constantes pertinentes ao cobol book.
+	 * Exp√µe constantes pertinentes ao cobol book.
 	 * @author fabiojm
 	 *
 	 */
@@ -38,12 +38,12 @@ public final class CobolConstants {
 		public static final String PESSOA_JURIDICA = "J";
 		
 		/**
-		 * Valor padr„o para booleano false
+		 * Valor padr√£o para booleano false
 		 */
 		public static final int BOOLEAN_FALSE = INTEGER._0;
 		
 		/**
-		 * Valor padr„o para booleano true
+		 * Valor padr√£o para booleano true
 		 */
 		public static final int BOOLEAN_TRUE = INTEGER._1;
 		
@@ -91,14 +91,14 @@ public final class CobolConstants {
 	
 	/**
 	 * Object-Cobol-Book Mapping.<br/>
-	 * Expıe constantes pertinentes ao mapeamento entre objetos e os book cobol.
-	 * @author fabiojm - F·bio JosÈ de Moraes
+	 * Exp√µe constantes pertinentes ao mapeamento entre objetos e os book cobol.
+	 * @author fabiojm - F√°bio Jos√© de Moraes
 	 *
 	 */
 	public static final class OCBM {
 		
 		/**
-		 * Quando presente no nome do Field trata-se de um campo que n„o existe no book.
+		 * Quando presente no nome do Field trata-se de um campo que n√£o existe no book.
 		 */
 		public static final String AUSENTE = "$$__AUSENTE__$$";
 		

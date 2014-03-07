@@ -33,7 +33,7 @@ import com.javaf.pattern.factory.IFactory;
 
 /**
  * 
- * @author fabiojm - F·bio JosÈ de Moraes
+ * @author fabiojm - F√°bio Jos√© de Moraes
  *
  */
 public class UtilIO implements Utility {
@@ -192,14 +192,14 @@ public class UtilIO implements Utility {
 		URL _result = null;
 		
 		logging.debug("TRYING 'ABSOLUTE OF' THROUGH BYTECODE JAR . . .");
-		logging.warn("TRYING 'ABSOLUTE OF' THROUGH BYTECODE JAR: n„o implementado!");
+		logging.warn("TRYING 'ABSOLUTE OF' THROUGH BYTECODE JAR: n√£o implementado!");
 		
 		return _result;
 	}
 	
 	/**
 	 * Obter o caminho onde residem os bytecodes, a partir do class loader passado como argumento.
-	 * @param loader Carregador de classes onde ser· obtido o diretÛrio.
+	 * @param loader Carregador de classes onde ser√° obtido o diret√≥rio.
 	 * @return <code>null</code> caso os bytecodes residam em um jar.
 	 */
 	public URL getRunningOn(final ClassLoader loader){

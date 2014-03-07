@@ -8,8 +8,8 @@ import java.lang.annotation.Target;
 
 /***
  * Anota uma subclasse para herdar os mapeamentos da superclasse direta.<br/>
- * Ela também aponta que possíveis sobrescritas de mapeamentos estão diretamente ligados à superclasse direta.
- * @author fabiojm - Fábio José de Moraes
+ * Ela tambÃ©m aponta que possÃ­veis sobrescritas de mapeamentos estÃ¡o diretamente ligados Ã  superclasse direta.
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 @Documented

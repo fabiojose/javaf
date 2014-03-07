@@ -13,7 +13,7 @@ import com.javaf.pattern.Visitor;
 
 /**
  * 
- * @author fabiojm - F·bio JosÈ de Moraes
+ * @author fabiojm - F√°bio Jos√© de Moraes
  *
  */
 public class Properties implements IProperties {
@@ -82,10 +82,10 @@ public class Properties implements IProperties {
 	}
 
 	/**
-	 * Aceitar execuÁ„o de um Visitor.
+	 * Aceitar execu√ß√£o de um Visitor.
 	 */
 	public <O> O accept(final Visitor<IProperties, O> visitor) {
-		logging.debug("ACEITANDO EXECU«√O DE VISITOR: " + visitor);
+		logging.debug("ACEITANDO EXECU√á√ÉO DE VISITOR: " + visitor);
 		
 		return visitor.visit(this);
 	}

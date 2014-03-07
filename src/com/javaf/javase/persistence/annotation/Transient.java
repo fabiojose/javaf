@@ -7,8 +7,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Marcar um determinado método, get ou set, como sendo transiente para o processo de persistencia.
- * @author fabiojm - Fábio José de Moraes
+ * Marcar um determinado mÃ©todo, get ou set, como sendo transiente para o processo de persistencia.
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

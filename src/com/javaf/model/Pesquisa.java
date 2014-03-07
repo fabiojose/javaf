@@ -8,7 +8,7 @@ import com.javaf.javase.util.Entryc;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  * @param <T>
  * @param <F>

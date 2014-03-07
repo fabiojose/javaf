@@ -2,7 +2,7 @@ package com.javaf.model;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  * @param <V1>
  * @param <V2>

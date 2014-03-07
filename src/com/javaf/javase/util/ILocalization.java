@@ -4,7 +4,7 @@ import java.util.Locale;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public interface ILocalization {

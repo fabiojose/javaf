@@ -11,7 +11,7 @@ import com.javaf.pattern.Visitor;
 
 /**
  * 
- * @author fabiojm - Fàbio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public class StringNamedParameterVisitor implements Visitor<String, String> {
@@ -63,7 +63,7 @@ public class StringNamedParameterVisitor implements Visitor<String, String> {
 
 	public static void main(String...args){
 		final Map<String, Object> _named = new HashMap<String, Object>();
-		_named.put("cliente.nome", "Fábio José de Moraes");
+		_named.put("cliente.nome", "FÃ¡bio JosÃ© de Moraes");
 		_named.put("cliente.idade", 30);
 		_named.put("cliente.celular", null);
 		

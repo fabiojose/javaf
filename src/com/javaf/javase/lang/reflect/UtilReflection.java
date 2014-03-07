@@ -99,7 +99,7 @@ public final class UtilReflection implements Utility {
 	}
 
 	/**
-	 * O primeiro metodo declarado com o nome igual a <code>name</code> sera retornado, que n„o possua par‚metros.<br/>
+	 * O primeiro metodo declarado com o nome igual a <code>name</code> sera retornado, que n√£o possua par√¢metros.<br/>
 	 * Caso <code>name</code> esteja formatado como uma assinatura de metodo Java, sera executada consulta como na API Reflection.
 	 * @param clazz
 	 * @param name
@@ -122,7 +122,7 @@ public final class UtilReflection implements Utility {
 			}
 			
 			if(null== _result){
-				throw new MethodNotFoundException("MÈtodo n„o encontrado: " + name);
+				throw new MethodNotFoundException("M√©todo n√£o encontrado: " + name);
 			}
 		} else {
 			//caso seja uma assinatura de metodo, entao extrair tipos dos argumentos
@@ -218,7 +218,7 @@ public final class UtilReflection implements Utility {
 	 * Construir o nome do setter baseando-se no nome de atributo e tipo do argumento.
 	 * 
 	 * @param attribute Nome do atributo
-	 * @return Nome do mÈtodo getter do atributo
+	 * @return Nome do m√©todo getter do atributo
 	 */
 	public String setterOf(final String attribute){
 		
@@ -275,10 +275,10 @@ public final class UtilReflection implements Utility {
 	}
 	
 	/**
-	 * Verifica se um determinado mÈtodo trata-se de um Java Bean getter.<br/>
+	 * Verifica se um determinado m√©todo trata-se de um Java Bean getter.<br/>
 	 * 
-	 * @param method MÈtodo para verificaÁ„o
-	 * @return <code>false</code> se for um outro mÈtodo qualquer.
+	 * @param method M√©todo para Verifica√ß√£o
+	 * @return <code>false</code> se for um outro m√©todo qualquer.
 	 */
 	public boolean isGetter(final Method method){
 		return (method.getName().startsWith(REFLECTION.GETTER_PREFIX) || method.getName().startsWith(REFLECTION.IS_PREFIX)) 
@@ -288,9 +288,9 @@ public final class UtilReflection implements Utility {
 	}
 	
 	/**
-	 * Verifica se um determinado mÈtodo trata-se de um Java Bean setter.<br/>
-	 * @param method MÈtodo para verificaÁ„o
-	 * @return <code>false</code> se for um outro mÈtodo qualquer.
+	 * Verifica se um determinado m√©todo trata-se de um Java Bean setter.<br/>
+	 * @param method M√©todo para Verifica√ß√£o
+	 * @return <code>false</code> se for um outro m√©todo qualquer.
 	 */
 	public boolean isSetter(final Method method){
 		return method.getName().startsWith(REFLECTION.SETTER_PREFIX) 
@@ -300,9 +300,9 @@ public final class UtilReflection implements Utility {
 	}
 	
 	/**
-	 * Obtem o nome do atributo do mÈtodo getter ou setter.
-	 * @param method MÈtodo
-	 * @return Nome do atribudo se for getter ou setter e String vazia caso contr·rio.
+	 * Obtem o nome do atributo do m√©todo getter ou setter.
+	 * @param method M√©todo
+	 * @return Nome do atribudo se for getter ou setter e String vazia caso contr√°rio.
 	 */
 	public String attributeOf(final Method method){
 		
@@ -323,14 +323,14 @@ public final class UtilReflection implements Utility {
 	}
 	
 	/**
-	 * Invocar metÛdo numa inst‚ncia de objeto qualquer e obter o resultado do retorno.
+	 * Invocar m√©todo numa inst√¢ncia de objeto qualquer e obter o resultado do retorno.
 	 * 
-	 * @param target Inst‚ncia alvo da obtenÁ„o e invocaÁ„o do mÈtodo
-	 * @param method Nome do mÈtodo
-	 * @param args Arranjo com as inst‚ncias de cada argumento na mesma ordem que aparecem no mÈtodo.<br/>
-	 * 				Se o mÈtodo n„o possuir argumentos um arranjo vazio deve ser passado.
-	 * @return Resultado da invocaÁ„o, caso n„o seja <code>void</code>
-	 * @throws InvokeException LanÁada se houver qualquer tipo de impedimento para obter ou invocar o mÈtodo.
+	 * @param target Inst√¢ncia alvo da obten√ß√£o e invoca√ß√£o do m√©todo
+	 * @param method Nome do m√©todo
+	 * @param args Arranjo com as inst√¢ncias de cada argumento na mesma ordem que aparecem no m√©todo.<br/>
+	 * 				Se o m√©todo n√£o possuir argumentos um arranjo vazio deve ser passado.
+	 * @return Resultado da invoca√ß√£o, caso n√£o seja <code>void</code>
+	 * @throws InvokeException Lan√ßada se houver qualquer tipo de impedimento para obter ou invocar o m√©todo.
 	 */
 	public Object invoke(final Object target, final String method, final Object[] args) throws InvokeException {
 		
@@ -369,13 +369,13 @@ public final class UtilReflection implements Utility {
 	}
 	
 	/**
-	 * Invocar metÛdo numa inst‚ncia de objeto qualquer e obter o resultado do retorno.
-	 * @param target Inst‚ncia alvo da obtenÁ„o e invocaÁ„o do mÈtodo
-	 * @param method MÈtodo que ser· invocado
-	 * @param args Arranjo com as inst‚ncias de cada argumento na mesma ordem que aparecem no mÈtodo.<br/>
-	 * 				Se o mÈtodo n„o possuir argumentos um arranjo vazio deve ser passado.
-	 * @return Resultado da invocaÁ„o, caso n„o seja <code>void</code>
-	 * @throws InvokeException LanÁada se houver qualquer tipo de impedimento para invocar o mÈtodo.
+	 * Invocar m√©todo numa inst√¢ncia de objeto qualquer e obter o resultado do retorno.
+	 * @param target Inst√¢ncia alvo da obten√ß√£o e invoca√ß√£o do m√©todo
+	 * @param method M√©todo que ser√° invocado
+	 * @param args Arranjo com as inst√¢ncias de cada argumento na mesma ordem que aparecem no m√©todo.<br/>
+	 * 				Se o m√©todo n√£o possuir argumentos um arranjo vazio deve ser passado.
+	 * @return Resultado da invoca√ß√£o, caso n√£o seja <code>void</code>
+	 * @throws InvokeException Lan√ßada se houver qualquer tipo de impedimento para invocar o m√©todo.
 	 */
 	public Object invoke(final Object target, final Method method, final Object...args) throws InvokeException {
 		
@@ -423,7 +423,7 @@ public final class UtilReflection implements Utility {
 	 * 
 	 * @param attribute Nome do atributo
 	 * @param type Tipo do attributo
-	 * @return Nome do mÈtodo getter do atributo
+	 * @return Nome do m√©todo getter do atributo
 	 */
 	public String getterOf(final String attribute, final Class<?> type){
 		
@@ -484,7 +484,7 @@ public final class UtilReflection implements Utility {
 	}
 	
 	/**
-	 * Buscar mÈtodo pelo nome, sendo aquele que possui nome igual a name ser· retornado.
+	 * Buscar m√©todo pelo nome, sendo aquele que possui nome igual a name ser√° retornado.
 	 * @param c
 	 * @param name
 	 * @return
@@ -571,11 +571,11 @@ public final class UtilReflection implements Utility {
 	}
 	
 	/**
-	 * Verifica se um determinado mÈtodo possui uma anotaÁ„o em particular.
+	 * Verifica se um determinado m√©todo possui uma anota√ß√£o em particular.
 	 * 
-	 * @param method MÈtodo
-	 * @param annotation Classe da anotaÁ„o
-	 * @return <code>false</code> caso o mÈtodo n„o possua a anotaÁ„o
+	 * @param method M√©todo
+	 * @param annotation Classe da anota√ß√£o
+	 * @return <code>false</code> caso o m√©todo n√£o possua a anota√ß√£o
 	 */
 	public boolean hasAnnotation(final Method method, final Class<? extends Annotation> annotation){
 		
@@ -583,11 +583,11 @@ public final class UtilReflection implements Utility {
 	}
 	
 	/**
-	 * Verifica se uma determinada possui uma anotaÁ„o em particular.
+	 * Verifica se uma determinada possui uma anota√ß√£o em particular.
 	 * 
-	 * @param method MÈtodo
-	 * @param annotation Classe da anotaÁ„o
-	 * @return <code>false</code> caso o mÈtodo n„o possua a anotaÁ„o
+	 * @param method M√©todo
+	 * @param annotation Classe da anota√ß√£o
+	 * @return <code>false</code> caso o m√©todo n√£o possua a anota√ß√£o
 	 */
 	public boolean hasAnnotation(final Class<?> clazz, final Class<? extends Annotation> annotation){
 		
@@ -607,46 +607,46 @@ public final class UtilReflection implements Utility {
 	}
 	
 	/**
-	 * Obtem a anotaÁ„o em um determinado mÈtodo.
+	 * Obtem a anota√ß√£o em um determinado m√©todo.
 	 * 
-	 * @param <T> Tipo da anotaÁ„o
-	 * @param method MÈtodo
-	 * @param annotation Classe da anotaÁ„o
-	 * @return <code>null</code> caso o mÈtodo n„o possui a anotaÁ„o.
+	 * @param <T> Tipo da anota√ß√£o
+	 * @param method M√©todo
+	 * @param annotation Classe da anota√ß√£o
+	 * @return <code>null</code> caso o m√©todo n√£o possui a anota√ß√£o.
 	 */
 	public <T extends Annotation> T annotationOf(final Method method, final Class<T> annotation){
 		return method.getAnnotation(annotation);
 	}
 	
 	/**
-	 * Obtem a anotaÁ„o em determinada objet
-	 * @param <T> Tipo da anotaÁ„o 
+	 * Obtem a anota√ß√£o em determinada objet
+	 * @param <T> Tipo da anota√ß√£o 
 	 * @param object Objeto
-	 * @param annotation Classe da anotaÁ„o
-	 * @return <code>null</code> caso a classe do objeto n„o possua a anotaÁ„o.
+	 * @param annotation Classe da anota√ß√£o
+	 * @return <code>null</code> caso a classe do objeto n√£o possua a anota√ß√£o.
 	 */
 	public <T extends Annotation> T annotationOf(final Object object, final Class<T> annotation){
 		return annotationOf(object.getClass(), annotation);
 	}
 	
 	/**
-	 * Obterm a anotaÁ„o em um determinada Classe
-	 * @param <T> Tipo da anotaÁ„o
+	 * Obterm a anota√ß√£o em um determinada Classe
+	 * @param <T> Tipo da anota√ß√£o
 	 * @param clazz Classe
-	 * @param annotation Classe da anotaÁ„o
-	 * @return <code>null</code> caso a classe n„o possua a anotaÁ„o.
+	 * @param annotation Classe da anota√ß√£o
+	 * @return <code>null</code> caso a classe n√£o possua a anota√ß√£o.
 	 */
 	public <T extends Annotation> T annotationOf(final Class<?> clazz, final Class<T> annotation){
 		return clazz.getAnnotation(annotation);
 	}
 	
 	/**
-	 * Obtem todos os mÈtodos anotados em uma determinada classe
-	 * @param <T> Tipo da anotaÁ„o 
-	 * @param clazz Classe para busca dos mÈtodos anotados
-	 * @param annotation AnotaÁ„o
-	 * @param type Tipo de mÈtodo que ser· retornado na lista.<br/>
-	 * ForneÁa <code>null</code> caso queria qualquer tipo de mÈtodo.
+	 * Obtem todos os m√©todos anotados em uma determinada classe
+	 * @param <T> Tipo da anota√ß√£o 
+	 * @param clazz Classe para busca dos m√©todos anotados
+	 * @param annotation anota√ß√£o
+	 * @param type Tipo de m√©todo que ser√° retornado na lista.<br/>
+	 * Forne√ßa <code>null</code> caso queria qualquer tipo de m√©todo.
 	 * @return 
 	 */
 	public <T extends Annotation> List<Method> methodsOf(final Class<?> clazz, final Class<T> annotation, final MethodType type){
@@ -703,9 +703,9 @@ public final class UtilReflection implements Utility {
     }
 	
 	/**
-	 * Verifica que o mÈtodo informado trata-se do tipo informado
-	 * @param method MÈtodo
-	 * @param type Tipo para verificaÁ„o
+	 * Verifica que o m√©todo informado trata-se do tipo informado
+	 * @param method M√©todo
+	 * @param type Tipo para Verifica√ß√£o
 	 * @return
 	 */
 	public boolean match(final Method method, final MethodType type){
@@ -738,14 +738,14 @@ public final class UtilReflection implements Utility {
 			
 			if(null!= _getInstance){
 				_result = (T)invoke(null, _getInstance);
-				LOGGING.trace("INST¬NCIA >" + _result + "< OBTIDA ATRAV…S DO M…TODO EST¡TICO >" + REFLECTION.METHOD_GET_INSTANCE + "<");
+				LOGGING.trace("INST√ÇNCIA >" + _result + "< OBTIDA ATRAV√âS DO M√©todo EST√ÅTICO >" + REFLECTION.METHOD_GET_INSTANCE + "<");
 			}
 			
 		}catch(MethodNotFoundException _e){
-			LOGGING.trace("M…TODO >" + REFLECTION.METHOD_GET_INSTANCE + "< N√O ENCONTRADO NA CLASSE >" + clazz + "<");
+			LOGGING.trace("M√©todo >" + REFLECTION.METHOD_GET_INSTANCE + "< N√ÉO ENCONTRADO NA CLASSE >" + clazz + "<");
 			
 		}catch(InvokeException _e){
-			LOGGING.trace("M…TODO >" + REFLECTION.METHOD_GET_INSTANCE + "< N√O P‘DE SER EXECUTADO! >" + clazz + "<");
+			LOGGING.trace("M√©todo >" + REFLECTION.METHOD_GET_INSTANCE + "< N√ÉO P√îDE SER EXECUTADO! >" + clazz + "<");
 		}
 		
 		return _result;
@@ -759,7 +759,7 @@ public final class UtilReflection implements Utility {
 			
 			if(null== _result){
 				_result = clazz.newInstance();
-				LOGGING.trace("INSTANCIADO ATRAV…S DO CONSTRUTOR DEFAULT >" + _result + "<");
+				LOGGING.trace("INSTANCIADO ATRAV√âS DO CONSTRUTOR DEFAULT >" + _result + "<");
 			}
 			
 		}catch(IllegalAccessException _e){

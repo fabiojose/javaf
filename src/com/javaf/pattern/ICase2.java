@@ -2,10 +2,10 @@ package com.javaf.pattern;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
- * @param <I> Tipo genérico de entrada <code>input</code> para executar o caso
- * @param <O> Tipo genérico de saída <code>output</code> da execução do caso
+ * @param <I> Tipo genÃ©rico de entrada <code>input</code> para executar o caso
+ * @param <O> Tipo genÃ©rico de saÃ­da <code>output</code> da execuÃ§Ã£o do caso
  */
 public interface ICase2<I, O> {
 

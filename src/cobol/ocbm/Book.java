@@ -10,8 +10,8 @@ import com.javaf.Constants.STRING;
 
 
 /**
- * Configura o Nome do Book e qual sua ·rea de dados.
- * @author fabiojm - F·bio JosÈ de Moraes
+ * Configura o Nome do Book e qual sua √°rea de dados.
+ * @author fabiojm - F√°bio Jos√© de Moraes
  *
  */
 @Documented
@@ -23,14 +23,14 @@ public @interface Book {
 	String area();
 	
 	/**
-	 * Prefixo padr„o utilizado em cada campo do book.
+	 * Prefixo padr√£o utilizado em cada campo do book.
 	 * @return
 	 */
 	String prefixo() default STRING.EMPTY;
 	
 	/**
-	 * Campos padronizados para a ·rea de entrada.<br/>
-	 * Estes campos n„o devem estar mapeados no Java Bean.<br/>
+	 * Campos padronizados para a √°rea de entrada.<br/>
+	 * Estes campos n√£o devem estar mapeados no Java Bean.<br/>
 	 * Todos os campos configurados devem obrigatoriamente possuir o atributo defaultValue preenchido.
 	 * @return
 	 */

@@ -147,7 +147,7 @@ public class SQLExecuter implements INativeExecuter {
 				logging.debug("STATEMENT COUNT: >" + statement.getUpdateCount() + "<");
 			}
 
-			//adicionar à lista para fechamento
+			//adicionar a lista para fechamento
 			context.toClose(statement);
 			
 		}catch(SQLException _e){

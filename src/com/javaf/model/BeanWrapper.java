@@ -6,7 +6,7 @@ import java.util.Map;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public class BeanWrapper extends HashMap<String, Object> implements Serializable {

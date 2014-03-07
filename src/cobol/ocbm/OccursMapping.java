@@ -10,7 +10,7 @@ import cobol.CobolConstants.OCBM;
 
 /**
  * Mapeamento de ocorrencias.
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

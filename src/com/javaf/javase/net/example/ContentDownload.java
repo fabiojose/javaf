@@ -16,7 +16,7 @@ import org.apache.log4j.Logger;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public class ContentDownload {

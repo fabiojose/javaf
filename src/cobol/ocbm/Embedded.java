@@ -7,8 +7,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Anota um método get como sendo embarcado em uma outra classe.
- * @author fabiojm - Fábio José de Moraes
+ * Anota um mÃ©todo get como sendo embarcado em uma outra classe.
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

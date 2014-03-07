@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public interface IPair extends Serializable {

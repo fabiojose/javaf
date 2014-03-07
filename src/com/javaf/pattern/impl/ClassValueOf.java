@@ -10,7 +10,7 @@ import com.javaf.pattern.ValueOf;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public class ClassValueOf<T> implements ValueOf<String, Class<T>> {

@@ -41,7 +41,7 @@ public class JDBCResult implements IResults, IResult {
 	}
 
 	/**
-	 * @return <code>null</code> Quando n„o hourem resultados.
+	 * @return <code>null</code> Quando n√£o hourem resultados.
 	 * @throws PersistenceException
 	 */
 	public IResult next() {

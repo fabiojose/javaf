@@ -50,7 +50,7 @@ import com.javaf.pattern.factory.IFactory;
 
 /**
  * 
- * @author fabiojm - F·bio JosÈ de Moraes
+ * @author fabiojm - F√°bio Jos√© de Moraes
  *
  */
 public final class UtilFormat implements Utility {
@@ -257,7 +257,7 @@ public final class UtilFormat implements Utility {
 		
 		if(null!= e){
 			_result.append(STRING.COLCHETES_ABRE);
-			//esse È estatico
+			//esse √© estatico
 			final Method _values     = reflection.methodOf(e, REFLECTION.VALUES_METHOD);
 			final Object[] _returned = (Object[])reflection.invoke(null, _values, REFLECTION.NO_ARGS);
 			
@@ -332,9 +332,9 @@ public final class UtilFormat implements Utility {
 	}
     
     /**
-     * Previne lanÁamento de <code>NullPointerException</code>
+     * Previne lan√ßamento de <code>NullPointerException</code>
      * @param integer
-     * @return <code>0</code> para <code>null</code> e o prÛpio valor, caso contr·rio
+     * @return <code>0</code> para <code>null</code> e o pr√≥pio valor, caso contr√°rio
      * @see Constants.INTEGERS
      */
     public int toInteger(final Integer integer){
@@ -372,9 +372,9 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Previne lanÁamento de <code>NullPointerException</code>
+     * Previne lan√ßamento de <code>NullPointerException</code>
      * @param value
-     * @return <code>Constants.STRINGS.EMPTY</code> para <code>value = null</code>, caso contr·rio retornar· <code>value</code>
+     * @return <code>Constants.STRINGS.EMPTY</code> para <code>value = null</code>, caso contr√°rio retornar√° <code>value</code>
      * @see Constants.STRINGS
      */
     public String toString(final String value){
@@ -401,9 +401,9 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Previne lanÁamento de <code>NullPointerException</code>
+     * Previne lan√ßamento de <code>NullPointerException</code>
      * @param bool
-     * @return <code>Constants.STRINGS.N</code> se <code>bool</code> for null ou false e true caso contr·rio.
+     * @return <code>Constants.STRINGS.N</code> se <code>bool</code> for null ou false e true caso contr√°rio.
      */
     public String toString(final Boolean bool){
     	if(null== bool){
@@ -414,7 +414,7 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Previne lanÁamento de <code>NullPointerException</code>
+     * Previne lan√ßamento de <code>NullPointerException</code>
      * @param integer
      * @return <code>integer</code> formatado sem os caracteres separadores ou uma String vazia se for <code>null</code>
      */
@@ -428,7 +428,7 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Previne lanÁamento de <code>NullPointerException</code>
+     * Previne lan√ßamento de <code>NullPointerException</code>
      * 
      * @param value Um valor Long
      * @return <code>value</code> formatado sem os caracteres separadores ou uma String vazia se for <code>null</code>
@@ -443,9 +443,9 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Previne lanÁamento de <code>NullPointerException</code> e aplica a formataÁ„o persolizada
-     * @param value Valor para formataÁ„o
-     * @param formatter FormataÁ„o personalizada
+     * Previne lan√ßamento de <code>NullPointerException</code> e aplica a fomata√ß√£o persolizada
+     * @param value Valor para fomata√ß√£o
+     * @param formatter fomata√ß√£o personalizada
      * @return <code>value</code> formatada ou <code>zeros</code> formatados caso <code>value</code> seja <code>null</code>
      */
     public String toString(final Long value, final DecimalFormat formatter){
@@ -457,9 +457,9 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Previne lanÁamento de <code>NullPointerException</code> e aplica a formataÁ„o persolizada
-     * @param value Valor para formataÁ„o
-     * @param formatter FormataÁ„o personalizada
+     * Previne lan√ßamento de <code>NullPointerException</code> e aplica a fomata√ß√£o persolizada
+     * @param value Valor para fomata√ß√£o
+     * @param formatter fomata√ß√£o personalizada
      * @return <code>value</code> formatada ou <code>zeros</code> formatados caso <code>value</code> seja <code>null</code>
      */
     public String toString(final Integer value, final DecimalFormat formatter){
@@ -482,9 +482,9 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Previne lanÁamento de <code>NullPointerException</code>
+     * Previne lan√ßamento de <code>NullPointerException</code>
      * 
-     * @param value Valor para formataÁ„o
+     * @param value Valor para fomata√ß√£o
      * @return <code>value</code> formatada ou <code>zeros</code> formatados caso <code>value</code> seja <code>null</code>
      */
     public String toString(final Double value){
@@ -496,9 +496,9 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Previne lanÁamento de <code>NullPointerException</code>
+     * Previne lan√ßamento de <code>NullPointerException</code>
      * 
-     * @param value Valor para formataÁ„o
+     * @param value Valor para fomata√ß√£o
      * @return <code>value</code> formatada ou <code>zeros</code> formatados caso <code>value</code> seja <code>null</code>
      */
     public String toString(final Float value){
@@ -529,9 +529,9 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Previne lanÁamento de <code>NullPointerException</code>
+     * Previne lan√ßamento de <code>NullPointerException</code>
      * @param value
-     * @return <code>Constants.DOUBLES.DOUBLE_0</code> se <code>value</code> for null, caso contr·rio o seu valor
+     * @return <code>Constants.DOUBLES.DOUBLE_0</code> se <code>value</code> for null, caso contr√°rio o seu valor
      */
     public double toDouble(final Double value){
     	
@@ -554,8 +554,8 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Previne lanÁamento de <code>NullPointerException</code>
-     * @param date Inst‚ncia 
+     * Previne lan√ßamento de <code>NullPointerException</code>
+     * @param date Inst√¢ncia 
      * @return <code>date</code> no formato ABNT (<code>dd/MM/yyyy HH:mm:ss</code>) ou String vazia se <code>date</date> for <code>null</code>
      */
     public String toString(final Date date){
@@ -568,10 +568,10 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Previne lanÁamento de <code>NullPointerException</code> e aplica formataÁ„o personalizada
-     * @param date Inst‚ncia para formataÁ„o
-     * @param formatter FormataÁ„o personalizada
-     * @return Data corrente formatada, caso a inst‚ncia para formataÁ„o seja <code>null</code>
+     * Previne lan√ßamento de <code>NullPointerException</code> e aplica fomata√ß√£o personalizada
+     * @param date Inst√¢ncia para fomata√ß√£o
+     * @param formatter fomata√ß√£o personalizada
+     * @return Data corrente formatada, caso a inst√¢ncia para fomata√ß√£o seja <code>null</code>
      */
     public String toString(final Date date, final DateFormat formatter){
     	
@@ -583,11 +583,11 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Transforma a inst‚ncia base para o formato personalizado
-     * @param string Inst‚ncia base para transformaÁ„o
+     * Transforma a inst√¢ncia base para o formato personalizado
+     * @param string Inst√¢ncia base para transforma√ß√£o
      * @param formatterFrom 
-     * Formato atual da <code>string</code> passada no par‚metro.
-     * Geralmente a formataÁ„o usada para este est· no <code>FORMATTERS.TIMESTAMP_COBOL</code>
+     * Formato atual da <code>string</code> passada no par√¢metro.
+     * Geralmente a fomata√ß√£o usada para este est√° no <code>FORMATTERS.TIMESTAMP_COBOL</code>
      * @param formatterTo Formato desejado da <code>string</code> (e.g. <code>FORMATTERS.ABNT_DATE_TIME_FORMAT</code>)
      * @return Retorna a data formatada
      */
@@ -608,7 +608,7 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Transformar data aplicando padr„o default.
+     * Transformar data aplicando padr√£o default.
      * @param string
      * @return
      * @throws ParsingException
@@ -625,10 +625,10 @@ public final class UtilFormat implements Utility {
     /**
      * Transforma uma String em Date.
      * 
-     * @param string Inst‚ncia base para transformaÁ„o
-     * @param formatter Formato da String que transformar·
+     * @param string Inst√¢ncia base para transforma√ß√£o
+     * @param formatter Formato da String que transformar√°
      * @return
-     * @throws ParsingException LanÁada quando n„o puder transformar a String
+     * @throws ParsingException Lan√ßada quando n√£o puder transformar a String
      */
     public Date parseDate(final String string, final DateFormat formatter) throws ParsingException {
     	
@@ -665,11 +665,11 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Transforma uma String em Double utilizando o formatador padr„o.
+     * Transforma uma String em Double utilizando o formatador padr√£o.
      *  
-     * @param string Inst‚ncia base para transformaÁ„o
+     * @param string Inst√¢ncia base para transforma√ß√£o
      * @return
-     * @throws ParsingException LanÁada quando n„o puder transformar a String
+     * @throws ParsingException Lan√ßada quando n√£o puder transformar a String
      */
     public Double parseDouble(final String string) throws ParsingException{
     	
@@ -682,11 +682,11 @@ public final class UtilFormat implements Utility {
     }
     
     /**
-     * Transforma uma String em Long utilizando o formatador padr„o.
+     * Transforma uma String em Long utilizando o formatador padr√£o.
      * 
-     * @param string Inst‚ncia base para transformaÁ„o
+     * @param string Inst√¢ncia base para transforma√ß√£o
      * @return
-     * @throws ParsingException LanÁada quando n„o puder transformar a String
+     * @throws ParsingException Lan√ßada quando n√£o puder transformar a String
      */
     public Long parseLong(final String string) throws ParsingException {
     	

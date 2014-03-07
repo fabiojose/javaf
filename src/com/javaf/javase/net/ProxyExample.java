@@ -14,7 +14,7 @@ import java.net.Proxy.Type;
 
 /**
  * 
- * @author fabiojm - F·bio JosÈ de Moraes
+ * @author fabiojm - F√°bio Jos√© de Moraes
  *
  */
 public final class ProxyExample {
@@ -30,7 +30,7 @@ public final class ProxyExample {
 		});
 		
 		try{
-			System.out.println("Abrindo conex„o . . .");
+			System.out.println("Abrindo conex√£o . . .");
 			final URL _url = new URL("http://stackoverflow.com");
 			final URLConnection _connection = _url.openConnection(_proxy);
 			

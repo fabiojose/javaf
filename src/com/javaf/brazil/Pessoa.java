@@ -8,8 +8,8 @@ import cobol.ocbm.Embedded;
 import cobol.ocbm.Mapping;
 
 /**
- * Implementa a representação de pessoa, seja física ou jurídica.
- * @author fabiojm - Fábio José de Moraes
+ * Implementa a representaÃ§Ã£o de pessoa, seja fÃ­sica ou jurÃ­dica.
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  */
 
 public class Pessoa extends AbstractDynamic/* implements ISugestao */{

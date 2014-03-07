@@ -2,24 +2,24 @@ package com.javaf;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public enum InstancePolicy {
 
 	/**
-	 * Instâncias únicas por classe, atributo de classe (<code>static</code>).
+	 * InstÃ¢ncias Ãºnicas por classe, atributo de classe (<code>static</code>).
 	 */
 	BY_CLASS,
 	
 	/**
-	 * Instâncias únicas por Thread.
+	 * InstÃ¢ncias Ãºnicas por Thread.
 	 * @see ThreadLocal
 	 */
 	BY_THREAD,
 	
 	/**
-	 * Instância únicas por objeto, atributo de instância (não-estático).
+	 * InstÃ¢ncia Ãºnicas por objeto, atributo de instÃ¢ncia (nÃ£o-estÃ¡tico).
 	 */
 	BY_OBJECT;
 	

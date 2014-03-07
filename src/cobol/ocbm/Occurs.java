@@ -9,8 +9,8 @@ import java.lang.annotation.Target;
 import cobol.CobolConstants.OCBM;
 
 /**
- * Configura uma ·rea de ocorrencias com seu nome e tamanho
- * @author fabiojm - F·bio JosÈ de Moraes
+ * Configura uma √°rea de ocorrencias com seu nome e tamanho
+ * @author fabiojm - F√°bio Jos√© de Moraes
  *
  */
 @Documented
@@ -21,7 +21,7 @@ public @interface Occurs {
 	String area();
 	
 	/**
-	 * Case offset esteja configurado como true, esse sera o valor maximo de ocorrencias vazias que ser„o geradas.
+	 * Case offset esteja configurado como true, esse sera o valor maximo de ocorrencias vazias que ser√£o geradas.
 	 * @return
 	 */
 	int size() default 0;

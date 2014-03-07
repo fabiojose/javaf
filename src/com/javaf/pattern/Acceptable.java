@@ -2,10 +2,10 @@ package com.javaf.pattern;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
- * @param <I> Tipo genérico de <i>Input</i> - entrada
- * @param <O> Tipo genérico de <i>Output</i> - saída
+ * @param <I> Tipo genÃ©rico de <i>Input</i> - entrada
+ * @param <O> Tipo genÃ©rico de <i>Output</i> - saÃ­da
  */
 public interface Acceptable<I> {
 

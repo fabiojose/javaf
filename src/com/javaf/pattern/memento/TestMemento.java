@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public final class TestMemento implements IOriginator, IPropertyOriginator {

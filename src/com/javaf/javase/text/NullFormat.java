@@ -6,7 +6,7 @@ import java.text.ParsePosition;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public class NullFormat extends Format {

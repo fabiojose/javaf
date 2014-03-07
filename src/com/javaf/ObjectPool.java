@@ -44,21 +44,21 @@ public final class ObjectPool {
 	}
 	
 	/**
-	 * Cria uma inst‚ncia de ObjectPool para utilizar em contextos personalizados.
+	 * Cria uma inst√¢ncia de ObjectPool para utilizar em contextos personalizados.
 	 * 
-	 * @return Nova inst‚ncia de ObjectPool
+	 * @return Nova inst√¢ncia de ObjectPool
 	 */
 	public static synchronized ObjectPool newPool(){
 		return new ObjectPool();
 	}
 	
 	/**
-	 * Obter ou criar um inst‚ncia caso n„o esteja no pool ainda.
+	 * Obter ou criar um inst√¢ncia caso n√£o esteja no pool ainda.
 	 * 
 	 * @param <T> Tipo do objeto
 	 * @param name Nome do objeto dentro do pool
 	 * @param type Tipo do objeto
-	 * @return Inst‚ncia do pool, nova inst‚ncia ou <code>null</code> se houver erro na instanciaÁ„o
+	 * @return Inst√¢ncia do pool, nova inst√¢ncia ou <code>null</code> se houver erro na instancia√ß√£o
 	 */
 	@SuppressWarnings("unchecked")
 	public <T> T getOrCreate(final Object name, final Class<T> type){
@@ -85,13 +85,13 @@ public final class ObjectPool {
 	}
 	
 	/**
-	 * Obter ou criar um inst‚ncia com uma Factory caso n„o esteja no pool ainda.
+	 * Obter ou criar um inst√¢ncia com uma Factory caso n√£o esteja no pool ainda.
 	 * 
 	 * @param <T> Tipo do objeto
 	 * @param name Nome do objeto dentro do pool
 	 * @param type Tipo do objeto
-	 * @param factory F·brica do objeto, caso ele n„o esteja no pool
-	 * @return Inst‚ncia do pool, nova inst‚ncia ou <code>null</code> se houver erro na instanciaÁ„o
+	 * @param factory F√°brica do objeto, caso ele n√£o esteja no pool
+	 * @return Inst√¢ncia do pool, nova inst√¢ncia ou <code>null</code> se houver erro na instancia√ß√£o
 	 */
 	@SuppressWarnings("unchecked")
 	public <T> T getOrCreate(final Object name, final Class<T> type, final IFactory factory){
@@ -121,11 +121,11 @@ public final class ObjectPool {
 	}
 	
 	/**
-	 * O valor padr„o para retorno quando null n„o ser· armazenado no pool
+	 * O valor padr√£o para retorno quando null n√£o ser√° armazenado no pool
 	 * @param <T>
 	 * @param name
 	 * @param type
-	 * @param forNull Valor que ser· retornado se objeto n„o estiver no pool
+	 * @param forNull Valor que ser√° retornado se objeto n√£o estiver no pool
 	 * @return
 	 */
 	@SuppressWarnings("unchecked")

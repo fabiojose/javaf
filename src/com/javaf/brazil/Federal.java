@@ -13,9 +13,9 @@ import com.javaf.javase.persistence.annotation.TransientPolicy;
 import com.javaf.javase.text.UtilFormat;
 
 /**
- * Implementa a representação de documento, seja Pessoa Física ou Jurídica.
+ * Implementa a representaÃ§Ã£o de documento, seja Pessoa FÃ­sica ou JurÃ­dica.
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  */
 public final class Federal implements Serializable {
 	private static final long serialVersionUID = 5625785710402868915L;

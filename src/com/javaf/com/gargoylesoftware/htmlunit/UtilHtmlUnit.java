@@ -17,7 +17,7 @@ import com.javaf.pattern.factory.IFactory;
 
 /**
  * 
- * @author fabiojm - F·bio JosÈ de Moraes
+ * @author fabiojm - F√°bio Jos√© de Moraes
  *
  */
 public final class UtilHtmlUnit implements Utility {
@@ -42,7 +42,7 @@ public final class UtilHtmlUnit implements Utility {
 	public WebClient newClient(){
 		WebClient _result = null;
 		
-		//verificar se proxy de rede est· ativo
+		//verificar se proxy de rede est√° ativo
 		final Boolean _on = application.valueOf(Boolean.class, APPLICATION.NETWORK_PROXY_ON_PROPERTY);
 		if(_on){
 			logging.debug("NETWORK PROXY IS TURNED **ON**");

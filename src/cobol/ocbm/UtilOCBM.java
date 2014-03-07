@@ -11,7 +11,7 @@ import com.javaf.javase.text.UtilFormat;
 
 /**
  * Utilidades para Object-Cobol-Book Mapping.
- * @author fabiojm - F·bio JosÈ de Moraes
+ * @author fabiojm - F√°bio Jos√© de Moraes
  *
  */
 public class UtilOCBM {
@@ -25,7 +25,7 @@ public class UtilOCBM {
 	}
 	
 	/**
-	 * Obter uma inst‚ncia de trabalho.
+	 * Obter uma inst√¢ncia de trabalho.
 	 * @return
 	 */
 	public static synchronized UtilOCBM getInstance(){

@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 @Documented

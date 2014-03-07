@@ -13,8 +13,8 @@ import com.javaf.pattern.factory.FactoryException;
 import com.javaf.pattern.factory.IFactory;
 
 /**
- * Implementa funÁıes facilitadores para manipulaÁıes de String.
- * @author fabiojm - F·bio JosÈ de Moraes
+ * Implementa m√©todos facilitadores para manipula√ß√£o de String.
+ * @author fabiojm - F√°bio Jos√© de Moraes
  */
 public class UtilString implements Utility {
 	private static final IFactory FACTORY = new Factory(){
@@ -30,7 +30,7 @@ public class UtilString implements Utility {
 	}
 	
 	/**
-	 * Obter uma inst‚ncia de trabalho.
+	 * Obter uma inst√¢ncia de trabalho.
 	 */
 	public static synchronized UtilString getInstance(){
 		return Bagman.utilOf(UtilString.class, FACTORY);
@@ -44,7 +44,7 @@ public class UtilString implements Utility {
 	 * Fragmentar uma string em uma quantidade limitada de palavras por linha
 	 * 
 	 * @param string String de entrada para fragmentar em palavras
-	 * @param palavras Quantidade m·xima de palavras por linha
+	 * @param palavras Quantidade m√°xima de palavras por linha
 	 * @return String com o caratecre <code>\n</code> separando as linhas 
 	 */
 	public String split(final String string, final int palavras) {
@@ -71,10 +71,10 @@ public class UtilString implements Utility {
 	}
 	
 	/**
-	 * Previne lanÁamento de <code>NullPointerException</code> e aplicar trim na string
+	 * Previne lan√ßamento de <code>NullPointerException</code> e aplicar trim na string
 	 * 
-	 * @param string Inst‚ncia para aplicar trim
-	 * @return Inst‚ncia com o trim aplicado ou <code>STRINGS.EMPTY</code> se string for <code>null</code>
+	 * @param string Inst√¢ncia para aplicar trim
+	 * @return Inst√¢ncia com o trim aplicado ou <code>STRINGS.EMPTY</code> se string for <code>null</code>
 	 */
 	public String trim(final String string){
     	if(null!= string){

@@ -22,7 +22,7 @@ public class Example0 {
 		try{
 			final CtClass _cc        = _pool.get("fabiojm.javassist.Leg");
 			final CtMethod _setColor = _cc.getDeclaredMethod("setColor");
-			_setColor.insertBefore("{System.out.println(\"Fodão!!!\");}");
+			_setColor.insertBefore("{System.out.println(\"Teste!!!\");}");
 			
 			final Class _class       = _pool.toClass(_cc);
 			final Object _instance   = _class.newInstance();
@@ -41,7 +41,7 @@ public class Example0 {
 			_leg.setColor(Color.BLACK);
 			*/
 			_cc.defrost();
-			_setColor.setBody("{System.out.println($1);System.out.println(666);\n System.out.println(\"Fodão!!!\");}");
+			_setColor.setBody("{System.out.println($1);System.out.println(666);\n System.out.println(\"Teste!!!\");}");
 			
 			//_pool.toClass(_cc);
 			//((Leg)_pool.toClass(_cc).newInstance()).setColor(Color.GREEN);

@@ -80,7 +80,7 @@ public final class UtilClass implements Utility {
 				break;
 				
 			}catch(ClassNotFoundException _e){
-				//n„o existem mais loaders para tentar
+				//n√£o existem mais loaders para tentar
 				if( (_index + INTEGER._1) == loaders.size() ){
 					LOGGING.trace("TIPO NAO FOI ENCONTRADO.", _e);
 					throw new TypeNotPresentException(_e.getMessage(), _e);

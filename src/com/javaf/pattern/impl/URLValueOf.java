@@ -9,7 +9,7 @@ import com.javaf.pattern.ValueOf;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public class URLValueOf implements ValueOf<String, URL> {

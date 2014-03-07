@@ -8,7 +8,7 @@ import com.javaf.Constants.STRING;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public class Image {

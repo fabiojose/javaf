@@ -2,7 +2,7 @@ package com.javaf.javase.text;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public class ParsingException extends RuntimeException {

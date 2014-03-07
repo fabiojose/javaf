@@ -19,10 +19,10 @@ import com.javaf.pattern.IFilter;
 
 
 /**
- * Encapsula uma coleÁ„o de objetos, facilitando a interaÁ„o com Tables, Grids, Combos, etc.
+ * Encapsula uma cole√ß√£o de objetos, facilitando a intera√ß√£o com Tables, Grids, Combos, etc.
  * 
- * @author fabiojm - F·bio JosÈ de Moraes
- * @param <T> Tipo armazenado na coleÁ„o de objetos
+ * @author fabiojm - F√°bio Jos√© de Moraes
+ * @param <T> Tipo armazenado na cole√ß√£o de objetos
  * @see List
  */
 public class Entryc<T extends Serializable> implements Serializable {
@@ -94,7 +94,7 @@ public class Entryc<T extends Serializable> implements Serializable {
 	}
 	
 	/**
-	 * Interventor para o metodo add ou addAll que delegar· para original e qualquer outro para entries
+	 * Interventor para o metodo add ou addAll que delegar√° para original e qualquer outro para entries
 	 * @author fabiojm
 	 */
 	private class Invocation implements InvocationHandler{
@@ -137,7 +137,7 @@ public class Entryc<T extends Serializable> implements Serializable {
 		
 		entries.clear();
 		
-		//filtrar entradas que ser„o retornadas
+		//filtrar entradas que ser√°o retornadas
 		if(null!= filter && filterOn){
 			
 			for(T _t : original){

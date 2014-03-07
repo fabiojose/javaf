@@ -13,7 +13,7 @@ import cobol.CobolConstants.OCBM;
 /**
  * Configura processo FWO em uma determinada classe
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 @Documented

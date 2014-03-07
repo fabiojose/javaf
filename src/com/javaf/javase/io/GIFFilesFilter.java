@@ -5,7 +5,7 @@ import java.io.FileFilter;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public final class GIFFilesFilter implements FileFilter {

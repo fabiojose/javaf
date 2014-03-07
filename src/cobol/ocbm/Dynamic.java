@@ -7,8 +7,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Configura uma indicador din‚mico
- * @author fabiojm - F·bio JosÈ de Moraes
+ * Configura uma indicador din√¢mico
+ * @author fabiojm - F√°bio Jos√© de Moraes
  *
  */
 @Documented
@@ -17,13 +17,13 @@ import java.lang.annotation.Target;
 public @interface Dynamic {
 
 	/**
-	 * Nome do atributo din‚mico
+	 * Nome do atributo din√¢mico
 	 * @return
 	 */
 	String nome();
 	
 	/**
-	 * Tipo do atributo din‚mico
+	 * Tipo do atributo din√¢mico
 	 * @return
 	 */
 	Class<?> type();

@@ -7,8 +7,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Conjunto de redefinições.
- * @author fabiojm - Fábio José de Moraes
+ * Conjunto de redefiniÃ§Ãµes.
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 @Documented

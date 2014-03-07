@@ -21,7 +21,7 @@ import com.javaf.pattern.Deen;
 
 /**
  * 
- * @author fabiojm - F�bio Jos� de Moraes
+ * @author fabiojm - Fábio José de Moraes
  *
  */
 public final class CobolDomain {

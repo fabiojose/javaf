@@ -6,7 +6,7 @@ import com.javaf.pattern.DeenString;
 
 /**
  * 
- * @author fabiojm - Fábio José de Moraes
+ * @author fabiojm - FÃ¡bio JosÃ© de Moraes
  *
  */
 public enum PessoaType implements DeenString<PessoaType> {

@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * 
- * @author fabiojm - F·bio JosÈ de Moraes
+ * @author fabiojm - F√°bio Jos√© de Moraes
  *
  */
 public final class ProxySelectorExample {
@@ -40,12 +40,12 @@ public final class ProxySelectorExample {
 						_selected = _proxy;
 						break;
 					} else {
-						System.out.println("N„o h· configuraÁ„o de proxy!");
+						System.out.println("N√£o h√° configura√ß√£o de proxy!");
 					}
 				}
 				
 				if(null!= _selected){
-					System.out.println("Abrindo conex„o . . .");
+					System.out.println("Abrindo conex√£o . . .");
 					
 					Authenticator.setDefault(new Authenticator(){
 						@Override
@@ -63,7 +63,7 @@ public final class ProxySelectorExample {
 					System.out.println(_r.readLine());
 				}
 			} else {
-				System.out.println("Nenhuma configuraÁ„o de proxy encontrada!");
+				System.out.println("Nenhuma configura√ß√£o de proxy encontrada!");
 			}
 		}catch(URISyntaxException _e){
 			_e.printStackTrace();
