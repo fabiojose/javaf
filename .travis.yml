@@ -9,4 +9,4 @@ after_success:
   - ssh-add .travis/travisci_rsa_deploy
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - git remote add deploy git@github.com:fabiojose/javaf.git
-  - git push deploy
+  - git push deploy master
