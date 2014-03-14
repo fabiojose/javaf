@@ -5,7 +5,7 @@ jdk:
   - oraclejdk7
   
 after_success:
-  - chmod 600 .travis/deploy_key.pem # this key should have push access
-  - ssh-add .travis/deploy_key.pem
+  - chmod 600 .travis/travisci_rsa_deploy # this key should have push access
+  - ssh-add .travis/travisci_rsa_deploy
   - git remote add deploy https://github.com/fabiojose/javaf.git
   - git push deploy
