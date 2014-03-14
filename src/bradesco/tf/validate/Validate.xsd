@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.bradesco.com.br/firp"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:firp="http://www.bradesco.com.br/firp">
+
+	<include schemaLocation="Application.xsd"></include>
+
+
+
+	<complexType name="ConfigurePlace">
+		<sequence>
+			<element name="label" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="value-name" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="value-class" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+		</sequence>
+	</complexType>
+
+
+
+
+
+	<complexType name="NotFilledValidator">
+		<complexContent>
+			<extension base="firp:Validator">
+				<sequence>
+					<element name="value-place" type="firp:ConfigurePlace"
+						maxOccurs="unbounded" minOccurs="1">
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="MinimumIntegerValidator">
+		<complexContent>
+			<extension base="firp:Validator">
+				<sequence>
+					<element name="minimum" type="int" maxOccurs="1"
+						minOccurs="1">
+					</element>
+					<element name="value-place" type="firp:ConfigurePlace"
+						maxOccurs="1" minOccurs="1">
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="MaximumLengthValidator">
+		<complexContent>
+			<extension base="firp:Validator">
+				<sequence>
+					<element name="maximum" type="int" maxOccurs="1"
+						minOccurs="1">
+					</element>
+					<element name="value-place" type="firp:ConfigurePlace"
+						maxOccurs="1" minOccurs="1">
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="DateNotLessThanAnotherValidator">
+		<complexContent>
+			<extension base="firp:Validator">
+				<sequence>
+					<element name="date" type="firp:ConfigurePlace"
+						maxOccurs="1" minOccurs="1">
+					</element>
+					<element name="another" type="firp:ConfigurePlace"
+						maxOccurs="1" minOccurs="1">
+					</element>
+					<element name="format" type="string" maxOccurs="1"
+						minOccurs="1">
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+
+
+	<complexType name="NotSelectedRadioValidator">
+		<complexContent>
+			<extension base="firp:Validator">
+				<sequence>
+					<element name="value-place" type="firp:ConfigurePlace"
+						maxOccurs="unbounded" minOccurs="1">
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+
+
+
+
+
+	<complexType name="NotSelectedCheckboxValidator">
+		<complexContent>
+			<extension base="firp:Validator">
+				<sequence>
+					<element name="value-place" type="firp:ConfigurePlace"
+						maxOccurs="unbounded" minOccurs="1">
+					</element>
+					<element name="check-policy" maxOccurs="1"
+						minOccurs="1">
+						<simpleType>
+							<restriction base="string">
+								<enumeration value="AOMENOS_UM"></enumeration>
+								<enumeration value="TODOS"></enumeration>
+								<enumeration value="GRUPO"></enumeration>
+							</restriction>
+						</simpleType>
+					</element>
+					<element name="check-length" maxOccurs="1"
+						minOccurs="0">
+						<simpleType>
+							<restriction base="int">
+								<minInclusive value="1"></minInclusive>
+							</restriction>
+						</simpleType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="NotAddedItemValidator">
+		<complexContent>
+			<extension base="firp:Validator">
+				<sequence>
+					<element name="value-place" type="firp:ConfigurePlace"
+						maxOccurs="1" minOccurs="1">
+					</element>
+					<element name="add-length" maxOccurs="1"
+						minOccurs="1">
+						<simpleType>
+							<restriction base="int">
+								<minInclusive value="1"></minInclusive>
+							</restriction>
+						</simpleType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="NotSelectedItemValidator">
+		<complexContent>
+			<extension base="firp:Validator">
+				<sequence>
+					<element name="value-place" type="firp:ConfigurePlace"
+						maxOccurs="1" minOccurs="1">
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="EventValidator">
+		<complexContent>
+			<extension base="firp:Event">
+				<choice>
+					<element name="validator-id" type="string"
+						maxOccurs="unbounded" minOccurs="1">
+					</element>
+					<element name="validator" type="firp:Validator" maxOccurs="unbounded" minOccurs="1"></element>
+				</choice>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="TimePeriodValidator">
+		<complexContent>
+			<extension base="firp:DateNotLessThanAnotherValidator">
+				<sequence>
+					<element name="determinado"
+						type="firp:ConfigurePlace">
+					</element>
+					<element name="indeterminado" type="firp:ConfigurePlace"></element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="MinimumFloatValidator">
+		<complexContent>
+			<extension base="firp:Validator">
+				<sequence>
+					<element name="minimum" type="float" maxOccurs="1"
+						minOccurs="1">
+					</element>
+					<element name="value-place" type="firp:ConfigurePlace" maxOccurs="1" minOccurs="1"></element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+</schema>
