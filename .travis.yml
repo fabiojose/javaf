@@ -16,4 +16,4 @@ after_success:
   - git remote add deploy git@github.com:fabiojose/javaf.git
   - git add dist
   - git commit -am "Travis CI Success Jar"
-  - git push deploy
+  - git push deploy HEAD:master
