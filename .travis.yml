@@ -5,9 +5,9 @@ jdk:
   - oraclejdk7
   
 after_success:
-  - chmod 600 .travis/travisci_rsa_deploy # this key should have push access
+  - chmod 600 .travis/deployment_key # this key should have push access
   - eval `ssh-agent -s`
-  - ssh-add .travis/travisci_rsa_deploy
+  - ssh-add .travis/deployment_key
   - ssh-add -l #verify key
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - git remote add deploy git@github.com:fabiojose/javaf.git
