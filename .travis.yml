@@ -2,7 +2,6 @@ language: java
 install: ant
 jdk:
   - openjdk7
-  - oraclejdk7
   
 after_success:
   - chmod 600 .travis/deployment_key # this key should have push access
