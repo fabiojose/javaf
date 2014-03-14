@@ -6,7 +6,9 @@ jdk:
   
 after_success:
   - chmod 600 .travis/travisci_rsa_deploy # this key should have push access
+  - ssh -vT git@github.com #verify the connection
   - ssh-add .travis/travisci_rsa_deploy
+  - ssh-add -l #verify key
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - git remote add deploy git@github.com:fabiojose/javaf.git
-  - git push -u deploy master
+  - sudo git push deploy master
