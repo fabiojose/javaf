@@ -6,6 +6,7 @@ jdk:
   
 after_success:
   - chmod 600 .travis/travisci_rsa_deploy # this key should have push access
+  - ssh-agent -s
   - ssh-add .travis/travisci_rsa_deploy
   - git remote add deploy https://github.com/fabiojose/javaf.git
   - git push deploy
