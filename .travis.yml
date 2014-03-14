@@ -11,4 +11,6 @@ after_success:
   - ssh-add -l #verify key
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - git remote add deploy git@github.com:fabiojose/javaf.git
+  - git add dist
+  - git commit -am "Travis CI Success Jar"
   - git push deploy
